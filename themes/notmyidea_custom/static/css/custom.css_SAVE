@@ -1,0 +1,27 @@
+/* Estilos modificados para el tema de Pelican "notmyidea" */
+
+article img {
+  border: solid lightgray 1px;
+  margin: 2em auto 1em auto;
+  max-width: 50%;
+  display: block;
+}
+
+#about {
+	text-align: center;
+}
+
+.center {
+	display: block;
+	text-align: center;
+}
+
+blockquote {
+	margin-top: 2em;
+}
+
+.piedefoto {
+	font-style: italic;
+	display: block;
+	text-align: center;
+}

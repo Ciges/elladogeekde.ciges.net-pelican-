@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* style.scss */
+/* Estilos personalizados que "sobreescribirán" a los estilos definidos originalmente en el tema svbhack */
+/* -- MIXINS -- */
+/* ------------ */
+/* -- VARIABLES -- */
+/* --------------- */
+/* line 18 */
+article img {
+  margin: 2em auto 1em auto;
+  max-width: 60%;
+  display: block;
+  border: solid lightgray 1px;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  -moz-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+
+/* line 25 */
+img[alt="logo"] {
+  max-width: 140px;
+  border: solid lightgray 1px;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  -moz-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+
+/* line 30 */
+blockquote {
+  width: 30rem;
+  margin-bottom: 2rem;
+}
+
+/* line 35 */
+blockquote:before {
+  content: "\201C";
+  display: block;
+  font-size: 3rem;
+  margin-bottom: -0.9em;
+  margin-left: -0.6em;
+}
+
+/* line 43 */
+blockquote:after {
+  content: "\201D";
+  font-size: 3rem;
+  display: block;
+  margin-top: -0.1em;
+  margin-left: 28rem;
+}
+
+/* Algunos elementos de contenido no se muestran en pantallas pequeñas */
+/* line 52 */
+.movilno {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 57 */
+  aside {
+    width: 22%;
+  }
+  /* line 60 */
+  aside div#user_meta {
+    max-width: none;
+  }
+
+  /* line 64 */
+  main {
+    width: 78%;
+    left: 22%;
+  }
+
+  /* line 69 */
+  .movilno {
+    display: inline;
+  }
+}
+/* line 75 */
+main div#ending_message {
+  padding-top: 2em;
+  text-align: center;
+}
+
+/* FUENTES */
+/* line 82 */
+body {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* line 88 */
+h1 {
+  font-size: 2rem;
+}
+
+/* line 92 */
+h1, h2, h3, #title, #subtitle, #description {
+  font-family: "Merriweather", serif;
+}
+
+/* line 96 */
+#subtitle {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* line 101 */
+#description {
+  line-height: 1.5em;
+  font-style: italic;
+}
+
+/* line 107 */
+main article {
+  max-width: 90%;
+  padding: 15px 40px;
+}
+/* line 111 */
+main article div.article_text {
+  line-height: 1.5em;
+}
+/* line 114 */
+main article div.article_meta {
+  font-size: 0.8rem;
+}
+/* line 119 */
+main header p {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+/* line 124 */
+main div#ending_message {
+  font-size: 0.8rem;
+}

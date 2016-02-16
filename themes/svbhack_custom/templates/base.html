@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+
+<head>
+  <!-- Fuentes de Google, cogidas las mismas que las del tema "vanz" -->
+  <link href="http://fonts.googleapis.com/" rel="dns-prefetch">
+  <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700|Merriweather:300,400&amp;subset=latin,latin-ext" rel="stylesheet">
+
+  {% assets filters="scss", output="css/style.css", "css/style.scss" %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+  {% endassets %}
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
+  <!-- Modificación de estilos con respecto al svbhack original -->
+  {% assets filters="scss", output="css/custom.css", "css/custom.scss" %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+  {% endassets %}
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="{{ AUTHOR_COMPLETE_NAME }}">
+  {% if DESCRIPTION %}<meta name="description" content="{{ DESCRIPTION }}">{% endif %}
+
+  {% if FEED_ALL_ATOM %}
+  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom" />
+  {% endif %}
+  {% if FEED_ALL_RSS %}
+  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS" />
+  {% endif %}
+
+  {% block head %}
+  {% endblock %}
+
+  <title>{{ SITENAME }} {% if SITESUBTITLE %}({{ SITESUBTITLE }}){% endif %} {% block title %}{% endblock %}</title>
+
+  {% include "modules/analytics.html" %}
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="{{ SITEURL }}">
+        {% if USER_LOGO_URL %}
+        <img src="{{ USER_LOGO_URL }}" alt="logo">
+        {% else %}
+        <img src="{{ SITEURL }}/theme/images/logo.png" alt="logo">
+        {% endif %}
+      </a>
+      <h2 id="title"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h2>
+      {% if SITESUBTITLE %}<h3 id="subtitle">{{ SITESUBTITLE }}</h3>{% endif %}
+      {% if DESCRIPTION %}<p id="description">{{ DESCRIPTION }}</p>{% endif %}
+      <p>{{ TAGLINE }}</p>
+      <ul>
+        {% for title, link in MENUITEMS %}
+        <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+        {% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
+        <li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+        {% endfor %}{% endif %}
+        {% for name, link in LINKS %}
+        <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+        {% endfor %}
+        {% for name, link in SOCIAL %}
+        <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <p>
+      <a href="{{ SITEURL }}">Inicio</a> &brvbar; <a href="{{ SITEURL }}/archives.html">Archivo</a>
+      {% if FEED_ALL_ATOM %}:w
+      &brvbar; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Atom</a>
+      {% endif %}
+      {% if FEED_ALL_RSS %}
+      &brvbar; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS</a>
+      {% endif %}
+      {% block header %}
+      {% endblock header %}
+      </p>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+
+    <div id="ending_message">
+      <div class="movilno">
+          <img src="/images/cms/logoCC.png" />
+          <p>Los artículos escritos en esta web son de uso libre bajo los términos de la licencia <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Reconocimiento-CompartirIgual 3.0</a>.</p>
+          <p>Se prohibe la copia, modificación o distribución de las fotografías en las que aparezcan personas (sólo se permite su mera visualización y se reservan todos los demás derechos de imagen).</p>
+      </div>
+      <p>Copyright © José Manuel Ciges Regueiro <em>(jmanuel en ciges punto net)</em> - Publicado con <a href="http://getpelican.com" target="_blank">Pelican</a> <span class="movilno">- Tema basado en <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">svbhack</a>, de Giulio Fidente</p></span>
+    </div>
+  </main>
+  {% include "modules/idl.html" %}
+</body>
+</html>
