@@ -82,54 +82,78 @@ main div#ending_message {
   text-align: center;
 }
 
-/* FUENTES */
 /* line 82 */
+aside div#user_meta {
+  padding: 30px;
+}
+
+/* FUENTES */
+/* line 88 */
 body {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
 
-/* line 88 */
+/* line 94 */
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-/* line 92 */
+/* line 98 */
+h2 {
+  font-size: 1.25rem;
+}
+
+/* line 102 */
+h3 {
+  font-size: 1.1rem;
+}
+
+/* line 106 */
 h1, h2, h3, #title, #subtitle, #description {
   font-family: "Merriweather", serif;
 }
 
-/* line 96 */
+/* line 110 */
 #subtitle {
   font-weight: normal;
   font-style: italic;
 }
 
-/* line 101 */
+/* line 115 */
 #description {
   line-height: 1.5em;
   font-style: italic;
 }
 
-/* line 107 */
+/* line 121 */
 main article {
   max-width: 90%;
   padding: 15px 40px;
 }
-/* line 111 */
+/* line 125 */
 main article div.article_text {
   line-height: 1.5em;
 }
-/* line 114 */
+/* line 128 */
 main article div.article_meta {
   font-size: 0.8rem;
 }
-/* line 119 */
+/* line 133 */
+main header {
+  padding: 1rem 40px;
+}
+/* line 136 */
 main header p {
   font-weight: normal;
   font-size: 0.9rem;
 }
-/* line 124 */
+/* line 142 */
 main div#ending_message {
+  font-size: 0.8rem;
+}
+
+/* line 149 */
+aside div#user_meta p, aside div#user_meta ul {
   font-size: 0.8rem;
 }

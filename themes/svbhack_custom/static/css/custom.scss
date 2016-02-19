@@ -78,6 +78,12 @@ main {
     }
 }
 
+aside {
+    div#user_meta {
+        padding: 30px;
+    }
+}
+
 /* FUENTES */
 body {
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
@@ -86,7 +92,15 @@ body {
 
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1.1rem;
 }
 
 h1, h2, h3, #title, #subtitle, #description {
@@ -116,12 +130,24 @@ main {
         }
     }
 
-    header p {
-        font-weight: normal;
-        font-size: 0.9rem;
+    header {
+        padding: 1rem 40px;
+
+        p {
+            font-weight: normal;
+            font-size: 0.9rem;
+        }
     }
 
     div#ending_message {
         font-size: 0.8rem;
+    }
+}
+
+aside {
+    div#user_meta {
+        p, ul {
+            font-size: 0.8rem;
+        }
     }
 }
