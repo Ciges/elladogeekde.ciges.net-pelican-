@@ -58,3 +58,6 @@ SOCIAL = (
             ('LinkedIn', 'http://es.linkedin.com/in/jmciges'),
         )
 
+# Analíticas con Google Analytics (Universal Analytics)
+GOOGLE_ANALYTICS = "UA-74045349-1";
+
