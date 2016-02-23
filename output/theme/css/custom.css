@@ -55,53 +55,53 @@ main article img {
   box-shadow: 0 0 10px #ccc;
 }
 /* line 59 */
-main article img.right {
-  margin: 0 1em 1em 1em;
-  float: right;
-}
-/* line 64 */
 main article .tituloimagen {
   font-style: italic;
   text-align: center;
 }
-/* line 71 */
+/* line 66 */
 main div#ending_message {
   padding-top: 2em;
   text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 78 */
+  /* line 73 */
   aside {
     width: 22%;
   }
-  /* line 81 */
+  /* line 76 */
   aside div#user_meta {
     max-width: none;
   }
 
-  /* line 85 */
+  /* line 80 */
   main {
     width: 78%;
     left: 22%;
   }
-  /* line 88 */
+  /* line 83 */
   main article {
     max-width: 90%;
     padding: 15px 40px;
   }
+  /* line 88 */
+  main img.right {
+    margin: 0 1em 1em 1em;
+    float: right;
+  }
 
-  /* line 94 */
+  /* line 95 */
   .movilno {
     display: inline;
   }
 
-  /* line 98 */
+  /* line 99 */
   blockquote {
     width: 30rem;
   }
 
-  /* line 102 */
+  /* line 103 */
   blockquote:after {
     content: "\201D";
     font-size: 3rem;
@@ -112,77 +112,77 @@ main div#ending_message {
 }
 /* --------------------------------------------------------------- */
 /* FUENTES */
-/* line 116 */
+/* line 117 */
 body {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
 
-/* line 122 */
+/* line 123 */
 h1 {
   font-size: 1.5rem;
 }
 
-/* line 126 */
+/* line 127 */
 h2 {
   font-size: 1.25rem;
 }
 
-/* line 130 */
+/* line 131 */
 h3 {
   font-size: 1.1rem;
 }
 
-/* line 134 */
+/* line 135 */
 h1, h2, h3, #title, #subtitle, #description {
   font-family: "Merriweather", serif;
 }
 
-/* line 138 */
+/* line 139 */
 #subtitle {
   font-weight: normal;
   font-style: italic;
 }
 
-/* line 143 */
+/* line 144 */
 #description {
   line-height: 1.5em;
   font-style: italic;
 }
 
-/* line 149 */
+/* line 150 */
 main article {
   text-align: justify;
 }
-/* line 151 */
+/* line 152 */
 main article div.article_text {
   line-height: 1.5em;
 }
-/* line 154 */
+/* line 155 */
 main article div.article_meta {
   font-size: 0.8rem;
 }
-/* line 159 */
+/* line 160 */
 main header {
   padding: 1rem 40px;
 }
-/* line 162 */
+/* line 163 */
 main header p {
   font-weight: normal;
   font-size: 0.9rem;
 }
-/* line 168 */
+/* line 169 */
 main div#ending_message {
   font-size: 0.8rem;
 }
 
-/* line 175 */
+/* line 176 */
 aside div#user_meta p, aside div#user_meta ul {
   font-size: 0.8rem;
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 184 */
+  /* line 185 */
   main article {
     text-align: left;
   }

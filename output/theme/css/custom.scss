@@ -56,11 +56,6 @@ main {
           @include box-shadow;
         }
 
-        img.right {
-            margin: 0 1em 1em 1em;
-            float: right;
-        }
-
         .tituloimagen {
             font-style: italic;
             text-align: center;
@@ -89,6 +84,12 @@ main {
             max-width: 90%;
             padding: 15px 40px;
         }
+
+        img.right {
+            margin: 0 1em 1em 1em;
+            float: right;
+        }
+
     }
 
     .movilno {
