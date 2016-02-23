@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Fuentes de Google, cogidas las mismas que las del tema "vanz" -->
+  <link href="http://fonts.googleapis.com/" rel="dns-prefetch">
+  <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700|Merriweather:300,400&amp;subset=latin,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://elladogeekde.ciges.net/theme/css/style.css?1e299ceb">
+  <link rel="stylesheet" type="text/css" href="http://elladogeekde.ciges.net/theme/css/pygments.css">
+  <!-- Modificación de estilos con respecto al svbhack original -->
+    <link rel="stylesheet" href="http://elladogeekde.ciges.net/theme/css/custom.css?a1c8f1ad">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="José Manuel Ciges Regueiro">
+<meta name="description" content="Reflexiones de un informático de sistemas de la generación del 76, enamorado del software libre, vigués, padre y algo bohemio y soñador entre otras cosas">
+
+<meta name="keywords" content="wifi drivers sd ubuntu linux elementaryos mountain">
+
+  <title>¡Comparte, insensato! (el lado geek de Ciges) &ndash; Configuración de la tarjeta wifi y el lector de tarjetas SD en Elementary OS (Ubuntu) Linux (Intel Wireless N7260, chipset RTL 5287)</title>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74045349-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="http://elladogeekde.ciges.net">
+        <img src="http://elladogeekde.ciges.net/theme/images/logo.png" alt="logo">
+      </a>
+      <h2 id="title"><a href="http://elladogeekde.ciges.net">¡Comparte, insensato!</a></h2>
+<h3 id="subtitle">el lado geek de Ciges</h3><p id="description">Reflexiones de un informático de sistemas de la generación del 76, enamorado del software libre, vigués, padre y algo bohemio y soñador entre otras cosas</p>      <p></p>
+      <ul>
+        <li><a href="http://www.facebook.com/ciges" target="_blank">Facebook</a></li>
+        <li><a href="http://twitter.com/Ciges" target="_blank">Twitter</a></li>
+        <li><a href="mailto://jmanuel@ciges.net" target="_blank">Email</a></li>
+        <li><a href="http://es.linkedin.com/in/jmciges" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <p>
+      <a href="http://elladogeekde.ciges.net">Inicio</a> &brvbar; <a href="http://elladogeekde.ciges.net/archives.html">Archivo</a>
+      </p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h1><a href="http://elladogeekde.ciges.net/blog/configuracion-lector-sd-linux-n7260">Configuración de la tarjeta wifi y el lector de tarjetas SD en Elementary OS (Ubuntu) Linux (Intel Wireless N7260, chipset RTL 5287)</a></h1>
+  </div>
+  <div class="article_text">
+    <p>Hace algún tiempo, en Mayo del 2014, compré un portatil a la empresa <a href="ihttp://www.mountain.es/">Mountain</a>, en concreto el <strong>Mountain Nickel 10</strong>, un portátil de 14" con procesador Core i5 4310M Mobile a 2.7 GHz, equipo del que estoy muy contento. Mountain es una empresa española conocida por montar sus equipos en España y por fabricar productos de gran calidad.</p>
+<p><img alt="Imagen de un portátil Mountain" class="right" src="http://elladogeekde.ciges.net/images/portatil_mountain.jpg" style="width: 345px; height: auto;"/></p>
+<p>Tengo instalado un sistema operativo <strong>Linux</strong>, en concreto una <a href="https://elementary.io/es/">Elementary OS</a>, distribución basada en <a href="http://www.ubuntu.com/">Ubuntu</a> y me encontré con que parte del hardware es demasiado <em>moderno</em> para la versión del kernel incluída por defecto.</p>
+<p>En concreto, no funcionan los siguientes dispositivos:</p>
+<ul>
+<li>La tarjeta de red Wifi, una <em>Intel Wireless N7260</em></li>
+<li>El lector de tarjetas SD, con chipset <em>Realtek 5287</em></li>
+</ul>
+<p>Los pasos para solucionarlo han sido:</p>
+<ol>
+<li>Actualizar el <em>kernel de Linux</em> desde este <a href="http://kernel.ubuntu.com/~kernel-ppa/">PPA de Ubuntu</a></li>
+<li>Actualizar el <em>firmware</em> utilizado por los drivers de la tarjeta wifi</li>
+</ol>
+<h2>Actualización al kernel a la versión 3.19.8</h2>
+<p>Para actualizarlo cogí la <strong>última version disponible de la serie 3 del kernel, la <em>3.19.8</em>, descargando los tres paquetes .deb, dos para las cabeceras y uno para el kernel, directamente desde <a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19.8-vivid/">la web del PPA del kernel de Ubuntu</a></strong> e instalándolos manualmente con <em>dpkg</em></p>
+<div class="highlight"><pre>dpkg -i linux-headers-3.19.8-031908_3.19.8-031908.201505110938_all.deb 
+dpkg -i linux-headers-3.19.8-031908-generic_3.19.8-031908.2015s5110938_amd64.deb 
+dpkg -i linux-image-3.19.8-031908-lowlatency_3.19.8-031908.201505110938_amd64.deb
+</pre></div>
+<h2>Actualización del firmware para los drivers de la tarjeta WiFi</h2>
+<p>Una vez actualizado el kernel a esta versión el lector de tarjetas SD funciona correctamente. El problema es que ¡no tenemos red!</p>
+<p>Al arrancar podemos ver el siguiente mensaje de error en el log del sistema <em>/var/log/syslog</em></p>
+<div class="highlight"><pre>iwlwifi 0000:02:00.0: Direct firmware load for iwlwifi-7260-12.ucode failed with error -2
+</pre></div>
+<p>Lo que está pasando es que los ficheros de firmware instalados (paquete <em>linux-firmware</em>) son antiguos, ya que nos está pidiendo en concreto el archivo <em>iwlwifi-7260-12.ucode</em> y el que tenemos en el sistema instalado en <em>/lib/firmware</em> es una versión anterior.</p>
+<p>En este caso una rápida búsqueda nos lleva a que se encuentra en <a href="http://packages.ubuntu.com/en/vivid/linux-firmware">este repositorio de actualizaciones de seguridad de Ubuntu</a>.</p>
+<p>Para este caso particular, y siguiendo la recomendación de su web, he <strong>añadido el repositorio de actualizaciones de seguridad</strong> a la lista de fuentes del sistema creando un archivo debajo de <em>/etc/apt/sources.list.d</em> con el siguiente contenido:</p>
+<div class="highlight"><pre><span class="k">deb</span> <span class="s">http://security.ubuntu.com/ubuntu</span> <span class="kp">vivid-security</span> <span class="kp">main</span>
+</pre></div>
+<p>Para posteriormente instalarlo de la manera habitual:</p>
+<div class="highlight"><pre>apt-get update
+apt-get install linux-firmware
+</pre></div>
+<p>Resuelto :-)</p>
+<blockquote>
+<p>Be Free! Be Wild! Be Linux!</p>
+</blockquote>
+  </div>
+  <div class="article_meta">
+    <p>Publicado el: mar 23 febrero 2016</p>
+    <p>Categoría: <a href="http://elladogeekde.ciges.net/category/blog.html">blog</a>
+ &ndash; Etiquetas:
+      <a href="http://elladogeekde.ciges.net/tag/wifi-drivers-sd-ubuntu-linux-elementaryos-mountain.html">wifi drivers sd ubuntu linux elementaryos mountain</a>    </p>
+  </div>
+
+  <div id="article_comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = "blog/configuracion-lector-sd-linux-n7260";
+        (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = 'http://elladogeekdeciges.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+    </script>
+  </div>
+
+</article>
+
+
+    <div id="ending_message">
+      <div class="movilno">
+          <img src="/images/cms/logoCC.png" />
+          <p>Los artículos escritos en esta web son de uso libre bajo los términos de la licencia <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Reconocimiento-CompartirIgual 3.0</a>.</p>
+          <p>Se prohibe la copia, modificación o distribución de las fotografías en las que aparezcan personas (sólo se permite su mera visualización y se reservan todos los demás derechos de imagen).</p>
+      </div>
+      <p>Copyright © José Manuel Ciges Regueiro <em>(jmanuel en ciges punto net)</em> - Publicado con <a href="http://getpelican.com" target="_blank">Pelican</a> <span class="movilno">- Tema basado en <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">svbhack</a>, de Giulio Fidente</p></span>
+    </div>
+  </main>
+</body>
+</html>
