@@ -15,12 +15,6 @@
 $ancho-cita: 30;
 /* --------------- */
 
-article img {
-  margin: 2em auto 1em auto;
-  max-width: 60%;
-  display: block;
-  @include box-shadow;
-}
 
 img[alt="logo"] {
   max-width: 140px;
@@ -54,6 +48,24 @@ main {
     article {
         max-width: 95%;
         padding: 15px 25px;
+
+        img {
+          margin: 2em auto 1em auto;
+          max-width: 60%;
+          display: block;
+          @include box-shadow;
+        }
+
+        img.right {
+            margin: 0 1em 1em 1em;
+            float: right;
+        }
+
+        .tituloimagen {
+            font-style: italic;
+            text-align: center;
+        }
+
     }
 
     div#ending_message {
