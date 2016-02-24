@@ -22,6 +22,7 @@
   <div class="article_text">
     {{ article.content }}
   </div>
+  {% include "modules/addthis.html" %}
 
   {% if DISQUS_SITENAME %}
   <div id="article_comments">
