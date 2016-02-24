@@ -9,7 +9,7 @@ Hace algún tiempo, en Mayo del 2014, compré un portatil a la empresa [Mountain
 
 Tengo instalado un sistema operativo **Linux**, en concreto una [Elementary OS](https://elementary.io/es/), distribución basada en [Ubuntu](http://www.ubuntu.com/) y me encontré con que parte del hardware es demasiado *moderno* para la versión del kernel incluída por defecto.
 
-En concreto, no funcionan los siguientes dispositivos:
+No me funcionan los siguientes dispositivos:
 
 - La tarjeta de red Wifi, una *Intel Wireless N7260*
 - El lector de tarjetas SD, con chipset *Realtek 5287*
@@ -35,11 +35,9 @@ Al arrancar podemos ver el siguiente mensaje de error en el log del sistema */va
 
     iwlwifi 0000:02:00.0: Direct firmware load for iwlwifi-7260-12.ucode failed with error -2
 
-Lo que está pasando es que los ficheros de firmware instalados (paquete *linux-firmware*) son antiguos, ya que nos está pidiendo en concreto el archivo *iwlwifi-7260-12.ucode* y el que tenemos en el sistema instalado en */lib/firmware* es una versión anterior.
+Lo que está pasando es que los ficheros de firmware instalados (paquete *linux-firmware*) son antiguos, ya que nos está pidiendo el archivo *iwlwifi-7260-12.ucode* *(versión 12)* y el que tenemos en el sistema instalado en */lib/firmware* es una versión anterior.
 
-En este caso una rápida búsqueda nos lleva a que se encuentra en [este repositorio de actualizaciones de seguridad de Ubuntu](http://packages.ubuntu.com/en/vivid/linux-firmware).
-
-Para este caso particular, y siguiendo la recomendación de su web, he **añadido el repositorio de actualizaciones de seguridad** a la lista de fuentes del sistema creando un archivo debajo de */etc/apt/sources.list.d* con el siguiente contenido:
+Una rápida búsqueda nos lleva a que se encuentra en [este repositorio de actualizaciones de seguridad de Ubuntu](http://packages.ubuntu.com/en/vivid/linux-firmware).  Siguiendo la recomendación de su web, he **añadido el repositorio de actualizaciones de seguridad** a la lista de fuentes del sistema creando un archivo debajo de */etc/apt/sources.list.d* con el siguiente contenido:
 
     deb http://security.ubuntu.com/ubuntu vivid-security main
 
@@ -51,5 +49,4 @@ Para posteriormente instalarlo de la manera habitual:
 Resuelto :-)
 
 > Be Free! Be Wild! Be Linux!
-
 

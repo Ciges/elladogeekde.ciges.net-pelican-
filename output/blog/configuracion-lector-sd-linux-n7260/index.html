@@ -65,7 +65,7 @@
     <p>Hace algún tiempo, en Mayo del 2014, compré un portatil a la empresa <a href="ihttp://www.mountain.es/">Mountain</a>, en concreto el <strong>Mountain Nickel 10</strong>, un portátil de 14" con procesador Core i5 4310M Mobile a 2.7 GHz, equipo del que estoy muy contento. Mountain es una empresa española conocida por montar sus equipos en España y por fabricar productos de gran calidad.</p>
 <p><img alt="Imagen de un portátil Mountain" class="right" src="../../images/portatil_mountain.jpg" style="width: 345px; height: auto;"/></p>
 <p>Tengo instalado un sistema operativo <strong>Linux</strong>, en concreto una <a href="https://elementary.io/es/">Elementary OS</a>, distribución basada en <a href="http://www.ubuntu.com/">Ubuntu</a> y me encontré con que parte del hardware es demasiado <em>moderno</em> para la versión del kernel incluída por defecto.</p>
-<p>En concreto, no funcionan los siguientes dispositivos:</p>
+<p>No me funcionan los siguientes dispositivos:</p>
 <ul>
 <li>La tarjeta de red Wifi, una <em>Intel Wireless N7260</em></li>
 <li>El lector de tarjetas SD, con chipset <em>Realtek 5287</em></li>
@@ -86,9 +86,8 @@
 <p>Al arrancar podemos ver el siguiente mensaje de error en el log del sistema <em>/var/log/syslog</em></p>
 <div class="highlight"><pre><span class="n">iwlwifi</span> <span class="mo">0000</span><span class="p">:</span><span class="mo">02</span><span class="p">:</span><span class="mo">00</span><span class="mf">.0</span><span class="p">:</span> <span class="n">Direct</span> <span class="n">firmware</span> <span class="n">load</span> <span class="k">for</span> <span class="n">iwlwifi</span><span class="o">-</span><span class="mi">7260</span><span class="o">-</span><span class="mi">12</span><span class="o">.</span><span class="n">ucode</span> <span class="n">failed</span> <span class="n">with</span> <span class="n">error</span> <span class="o">-</span><span class="mi">2</span>
 </pre></div>
-<p>Lo que está pasando es que los ficheros de firmware instalados (paquete <em>linux-firmware</em>) son antiguos, ya que nos está pidiendo en concreto el archivo <em>iwlwifi-7260-12.ucode</em> y el que tenemos en el sistema instalado en <em>/lib/firmware</em> es una versión anterior.</p>
-<p>En este caso una rápida búsqueda nos lleva a que se encuentra en <a href="http://packages.ubuntu.com/en/vivid/linux-firmware">este repositorio de actualizaciones de seguridad de Ubuntu</a>.</p>
-<p>Para este caso particular, y siguiendo la recomendación de su web, he <strong>añadido el repositorio de actualizaciones de seguridad</strong> a la lista de fuentes del sistema creando un archivo debajo de <em>/etc/apt/sources.list.d</em> con el siguiente contenido:</p>
+<p>Lo que está pasando es que los ficheros de firmware instalados (paquete <em>linux-firmware</em>) son antiguos, ya que nos está pidiendo el archivo <em>iwlwifi-7260-12.ucode</em> <em>(versión 12)</em> y el que tenemos en el sistema instalado en <em>/lib/firmware</em> es una versión anterior.</p>
+<p>Una rápida búsqueda nos lleva a que se encuentra en <a href="http://packages.ubuntu.com/en/vivid/linux-firmware">este repositorio de actualizaciones de seguridad de Ubuntu</a>.  Siguiendo la recomendación de su web, he <strong>añadido el repositorio de actualizaciones de seguridad</strong> a la lista de fuentes del sistema creando un archivo debajo de <em>/etc/apt/sources.list.d</em> con el siguiente contenido:</p>
 <div class="highlight"><pre><span class="k">deb</span> <span class="s">http://security.ubuntu.com/ubuntu</span> <span class="kp">vivid-security</span> <span class="kp">main</span>
 </pre></div>
 <p>Para posteriormente instalarlo de la manera habitual:</p>
