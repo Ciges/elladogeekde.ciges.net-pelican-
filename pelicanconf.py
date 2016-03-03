@@ -61,3 +61,5 @@ SOCIAL = (
 # Analíticas con Google Analytics (Universal Analytics)
 GOOGLE_ANALYTICS = "UA-74045349-1";
 
+# Si es False no usamos recursos de Internet (fuentes de Google, comentarios con Disqus, compartir con AddThis)
+CONEXION_INTERNET = True

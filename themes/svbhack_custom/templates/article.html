@@ -22,8 +22,12 @@
   <div class="article_text">
     {{ article.content }}
   </div>
+  
+  {% if CONEXION_INTERNET %}
   {% include "modules/addthis.html" %}
+  {% endif %}
 
+  {% if CONEXION_INTERNET %}
   {% if DISQUS_SITENAME %}
   <div id="article_comments">
     <div id="disqus_thread"></div>
@@ -36,6 +40,7 @@
          })();
     </script>
   </div>
+  {% endif %}
   {% endif %}
 
 </article>
