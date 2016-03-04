@@ -156,6 +156,21 @@ h1, h2, h3, #title, #subtitle, #description {
     font-style: italic;
 }
 
+header {
+    p {
+      // Menú de navegación superior
+      a {
+        @include border-radius(10px);
+        border: 2px solid #99c3e9;
+        padding: 5px 15px 5px 15px;
+        color: #4d4d4d;
+        margin-right: 1rem;
+      }
+      a:hover {
+        background-color: rgba(153,195,233, 0.2);
+      }
+    }
+}
 main {
     article {
         text-align: justify;
@@ -168,7 +183,7 @@ main {
 
         a.readmore {
           @include border-radius(10px);
-          border: 2px solid $light-grey;
+          border: 1px solid #99c3e9;
           padding: 5px 15px 5px 15px;
           font-size: smaller;
           color: #4d4d4d;
@@ -176,7 +191,7 @@ main {
           font-style: italic;
         }
         a.readmore:hover {
-          background-color: rgba(0, 0, 0, 0.02);
+          background-color: rgba(153,195,233, 0.1);
         }
 
         .warning

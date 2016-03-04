@@ -367,35 +367,50 @@ h1, h2, h3, #title, #subtitle, #description {
   font-style: italic;
 }
 
-/* line 160 */
+/* line 162 */
+header p a {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 2px solid #99c3e9;
+  padding: 5px 15px 5px 15px;
+  color: #4d4d4d;
+  margin-right: 1rem;
+}
+/* line 169 */
+header p a:hover {
+  background-color: rgba(153, 195, 233, 0.2);
+}
+
+/* line 175 */
 main article {
   text-align: justify;
 }
-/* line 162 */
+/* line 177 */
 main article div.article_text {
   line-height: 1.5em;
 }
-/* line 165 */
+/* line 180 */
 main article div.article_meta {
   font-size: 0.8rem;
 }
-/* line 169 */
+/* line 184 */
 main article a.readmore {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  border: 2px solid #eeeeee;
+  border: 1px solid #99c3e9;
   padding: 5px 15px 5px 15px;
   font-size: smaller;
   color: #4d4d4d;
   margin-left: 1rem;
   font-style: italic;
 }
-/* line 178 */
+/* line 193 */
 main article a.readmore:hover {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(153, 195, 233, 0.1);
 }
-/* line 182 */
+/* line 197 */
 main article .warning
 span {
   border-radius: 7px;
@@ -408,36 +423,36 @@ span {
   font-style: italic;
   background-color: rgba(255, 0, 0, 0.02);
 }
-/* line 191 */
+/* line 206 */
 main article .warning
 span .fa {
   margin-right: 0.5rem;
   margin-left: -0.5rem;
 }
-/* line 198 */
+/* line 213 */
 main header {
   padding: 0.25rem 40px;
 }
-/* line 201 */
+/* line 216 */
 main header p {
   font-weight: normal;
   font-size: 0.9rem;
 }
-/* line 207 */
+/* line 222 */
 main div#ending_message {
   font-size: 0.8rem;
 }
 
-/* line 214 */
+/* line 229 */
 aside div#user_meta p, aside div#user_meta ul {
   font-size: 0.8rem;
 }
-/* line 218 */
+/* line 233 */
 aside div#user_meta ul li a {
   border: 1px solid #eeeeee;
   color: #eeeeee;
 }
-/* line 222 */
+/* line 237 */
 aside div#user_meta ul li a:hover {
   border-width: 2px;
   font-weight: bold;
@@ -445,7 +460,7 @@ aside div#user_meta ul li a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 233 */
+  /* line 248 */
   main article {
     text-align: left;
   }
