@@ -13,7 +13,7 @@ SITEURL = 'http://elladogeekde.ciges.net'
 DESCRIPTION = "Reflexiones de un informático de sistemas de la generación del 76, enamorado del software libre, vigués, padre y algo bohemio y soñador entre otras cosas"
 
 #USER_LOGO_URL = SITEURL + "/theme/images/logo.png"
-USER_LOGO_URL = SITEURL + "/theme/images/ciges.png"
+USER_LOGO_URL = "/theme/images/ciges.png"
 
 PATH = 'content'
 
