@@ -7,9 +7,9 @@ AUTHOR_COMPLETE_NAME = "José Manuel Ciges Regueiro"
 SITENAME = '¡Comparte, insensato!'
 SITESUBTITLE = "el lado geek de Ciges"
 # Producción
-SITEURL = 'http://elladogeekde.ciges.net'
+#SITEURL = 'http://elladogeekde.ciges.net'
 # Desarrollo
-#SITEURL = "http://localhost"
+SITEURL = "http://localhost"
 DESCRIPTION = "Reflexiones de un informático de sistemas de la generación del 76, enamorado del software libre, vigués, padre y algo bohemio y soñador entre otras cosas"
 
 #USER_LOGO_URL = SITEURL + "/theme/images/logo.png"
@@ -51,7 +51,7 @@ ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
 #THEME="/var/www/elladogeekde.ciges.net/themes/notmyidea_custom"
 THEME="/var/www/elladogeekde.ciges.net/themes/svbhack_custom"
 PLUGIN_PATHS = [ "/var/www/elladogeekde.ciges.net/plugins" ]
-PLUGINS = [ "optimize_images", "better_figures_and_images", "liquid_tags.img", "assets" , "summary" ]
+PLUGINS = [ "optimize_images", "better_figures_and_images", "liquid_tags.img", "assets", "summary", "pelican_fontawesome" ]
 
 # Comentarios con Disqus
 DISQUS_SITENAME = "elladogeekdeciges"

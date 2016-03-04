@@ -8,12 +8,16 @@
 {% block content %}
 <article>
   <div class="article_title">
+  {% if article.status != "Draft" %}
     <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+  {% else %}
+    <h1 style="font-style: italic;">{{ article.title }}</h1>
+  {% endif %}
   </div>
   {% include "modules/article_meta.html" %}
   <div class="article_text">
     {% if article.status == "Draft" %}
-    <p class="warning">Este artículo es un borrador</p>
+    <p class="warning" style="text-align: center;"><span><i class="fa fa-exclamation-triangle"></i> Este artículo es un borrador</span></p>
     {% endif %}
 
     {{ article.content }}
