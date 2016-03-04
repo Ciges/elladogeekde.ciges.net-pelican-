@@ -426,7 +426,12 @@ main article a.readmore {
 main article a.readmore:hover {
   background-color: rgba(153, 195, 233, 0.1);
 }
-/* line 212 */
+/* line 211 */
+main article .warning {
+  display: block;
+  margin: 1.5rem auto;
+}
+/* line 214 */
 main article .warning span {
   border-radius: 7px;
   -moz-border-radius: 7px;
@@ -437,35 +442,35 @@ main article .warning span {
   font-style: italic;
   background-color: rgba(255, 0, 0, 0.02);
 }
-/* line 219 */
+/* line 221 */
 main article .warning span .fa {
   margin-right: 0.5rem;
   margin-left: -0.5rem;
 }
-/* line 227 */
+/* line 229 */
 main header {
   padding: 0.25rem 40px;
 }
-/* line 230 */
+/* line 232 */
 main header p {
   font-weight: normal;
   font-size: 0.9rem;
 }
-/* line 236 */
+/* line 238 */
 main div#ending_message {
   font-size: 0.8rem;
 }
 
-/* line 243 */
+/* line 245 */
 aside div#user_meta p, aside div#user_meta ul {
   font-size: 0.8rem;
 }
-/* line 247 */
+/* line 249 */
 aside div#user_meta ul li a {
   border: 1px solid #eeeeee;
   color: #eeeeee;
 }
-/* line 251 */
+/* line 253 */
 aside div#user_meta ul li a:hover {
   border-width: 2px;
   font-weight: bold;
@@ -473,11 +478,11 @@ aside div#user_meta ul li a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 262 */
+  /* line 264 */
   main article {
     text-align: left;
   }
-  /* line 266 */
+  /* line 268 */
   main article .warning span {
     padding: 5px 3.5rem 5px 4rem;
     font-size: larger;

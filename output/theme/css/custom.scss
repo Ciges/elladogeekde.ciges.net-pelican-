@@ -209,6 +209,8 @@ main {
         }
 
         .warning {
+            display: block;
+            margin: 1.5rem auto;
             span {
                 @include border-radius(7px);
                 border: 2px solid #ff0000;
