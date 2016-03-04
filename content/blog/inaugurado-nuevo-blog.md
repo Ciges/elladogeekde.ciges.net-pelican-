@@ -11,6 +11,7 @@ Con este humilde web, que sucede a la [anterior](http://www.ciges.net), pretendo
 
 Ilustración de la genial diseñadora mejicana [Rosina Marisin](http://ross.mx/)
 {: .tituloimagen}
+
 <!-- PELICAN_END_SUMMARY -->
 
 Se suelen dirigir a mi por mi apellido, Ciges (estiloso y elegante sin par) y, entre otras cosas, como padre y vigués de corazón (de la noble y leal ciudad española de [Vigo](https://es.wikipedia.org/wiki/Vigo)) soy un apasionado de la informática (desde los tiempos del 8086 que uno ya tiene una edad).

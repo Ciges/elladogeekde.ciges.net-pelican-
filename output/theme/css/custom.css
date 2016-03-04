@@ -282,7 +282,7 @@ main div#ending_message {
 @media screen and (min-width: 1024px) {
   /* line 80 */
   aside {
-    width: 18%;
+    width: 15%;
     background-image: url("/theme/images/costa.jpg");
     background-position: 77% -65%;
     background-repeat: no-repeat;
@@ -294,8 +294,8 @@ main div#ending_message {
 
   /* line 90 */
   main {
-    width: 82%;
-    left: 18%;
+    width: 85%;
+    left: 15%;
   }
   /* line 93 */
   main article {
