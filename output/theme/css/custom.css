@@ -4,7 +4,7 @@
 /* ------------ */
 /* -- VARIABLES -- */
 /* --------------- */
-/* line 19 */
+/* line 20 */
 img[alt="logo"] {
   max-width: 140px;
   border: solid lightgray 1px;
@@ -14,11 +14,20 @@ img[alt="logo"] {
 }
 
 /* line 24 */
+img[alt="avatar"] {
+  max-width: 140px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+
+/* line 32 */
 blockquote {
   margin-bottom: 2rem;
 }
 
-/* line 28 */
+/* line 36 */
 blockquote:before {
   content: "\201C";
   display: block;
@@ -28,22 +37,26 @@ blockquote:before {
 }
 
 /* Algunos elementos de contenido no se muestran en pantallas pequeñas */
-/* line 37 */
+/* line 45 */
 .movilno {
   display: none;
 }
 
-/* line 42 */
+/* line 49 */
+aside {
+  background-color: #99c3e9;
+}
+/* line 50 */
 aside div#user_meta {
   padding: 30px;
 }
 
-/* line 48 */
+/* line 57 */
 main article {
   max-width: 95%;
   padding: 15px 25px;
 }
-/* line 52 */
+/* line 61 */
 main article img {
   margin: 2em auto 1em auto;
   max-width: 60%;
@@ -53,54 +66,57 @@ main article img {
   -moz-box-shadow: 0 0 10px #ccc;
   box-shadow: 0 0 10px #ccc;
 }
-/* line 59 */
+/* line 68 */
 main article .tituloimagen {
   font-style: italic;
   text-align: center;
 }
-/* line 66 */
+/* line 75 */
 main div#ending_message {
   padding-top: 2em;
   text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 73 */
+  /* line 82 */
   aside {
-    width: 22%;
+    width: 18%;
+    background-image: url("/theme/images/costa.jpg");
+    background-position: 77% -65%;
+    background-repeat: no-repeat;
   }
-  /* line 76 */
+  /* line 85 */
   aside div#user_meta {
     max-width: none;
   }
 
-  /* line 80 */
+  /* line 92 */
   main {
-    width: 78%;
-    left: 22%;
+    width: 82%;
+    left: 18%;
   }
-  /* line 83 */
+  /* line 95 */
   main article {
     max-width: 90%;
     padding: 15px 40px;
   }
-  /* line 88 */
+  /* line 100 */
   main img.right {
     margin: 0 1em 1em 1em;
     float: right;
   }
 
-  /* line 95 */
+  /* line 107 */
   .movilno {
     display: inline;
   }
 
-  /* line 99 */
+  /* line 111 */
   blockquote {
     width: 30rem;
   }
 
-  /* line 103 */
+  /* line 115 */
   blockquote:after {
     content: "\201D";
     font-size: 3rem;
@@ -111,77 +127,88 @@ main div#ending_message {
 }
 /* --------------------------------------------------------------- */
 /* FUENTES */
-/* line 117 */
+/* line 129 */
 body {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
 
-/* line 123 */
+/* line 135 */
 h1 {
   font-size: 1.5rem;
 }
 
-/* line 127 */
+/* line 139 */
 h2 {
   font-size: 1.25rem;
 }
 
-/* line 131 */
+/* line 143 */
 h3 {
   font-size: 1.1rem;
 }
 
-/* line 135 */
+/* line 147 */
 h1, h2, h3, #title, #subtitle, #description {
   font-family: "Merriweather", serif;
 }
 
-/* line 139 */
+/* line 151 */
 #subtitle {
   font-weight: normal;
   font-style: italic;
 }
 
-/* line 144 */
+/* line 156 */
 #description {
   line-height: 1.5em;
   font-style: italic;
 }
 
-/* line 150 */
+/* line 162 */
 main article {
   text-align: justify;
 }
-/* line 152 */
+/* line 164 */
 main article div.article_text {
   line-height: 1.5em;
 }
-/* line 155 */
+/* line 167 */
 main article div.article_meta {
   font-size: 0.8rem;
 }
-/* line 160 */
+/* line 172 */
 main header {
-  padding: 1rem 40px;
+  padding: 0.25rem 40px;
 }
-/* line 163 */
+/* line 175 */
 main header p {
   font-weight: normal;
   font-size: 0.9rem;
 }
-/* line 169 */
+/* line 181 */
 main div#ending_message {
   font-size: 0.8rem;
 }
 
-/* line 176 */
+/* line 188 */
 aside div#user_meta p, aside div#user_meta ul {
   font-size: 0.8rem;
 }
+/* line 192 */
+aside div#user_meta ul li a {
+  border: 1px solid #eeeeee;
+  color: #eeeeee;
+}
+/* line 196 */
+aside div#user_meta ul li a:hover {
+  border-width: 2px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
 @media screen and (min-width: 1024px) {
-  /* line 185 */
+  /* line 207 */
   main article {
     text-align: left;
   }

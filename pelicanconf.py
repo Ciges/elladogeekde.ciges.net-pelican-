@@ -6,8 +6,14 @@ AUTHOR = 'Ciges'
 AUTHOR_COMPLETE_NAME = "José Manuel Ciges Regueiro"
 SITENAME = '¡Comparte, insensato!'
 SITESUBTITLE = "el lado geek de Ciges"
-SITEURL = 'http://elladogeekde.ciges.net'
+# Producción
+#SITEURL = 'http://elladogeekde.ciges.net'
+# Desarrollo
+SITEURL = "http://localhost"
 DESCRIPTION = "Reflexiones de un informático de sistemas de la generación del 76, enamorado del software libre, vigués, padre y algo bohemio y soñador entre otras cosas"
+
+#USER_LOGO_URL = SITEURL + "/theme/images/logo.png"
+USER_LOGO_URL = SITEURL + "/theme/images/ciges.png"
 
 PATH = 'content'
 
