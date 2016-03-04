@@ -15,7 +15,7 @@ img[alt="logo"] {
 
 /* line 24 */
 img[alt="avatar"] {
-  max-width: 140px;
+  max-width: 120px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
