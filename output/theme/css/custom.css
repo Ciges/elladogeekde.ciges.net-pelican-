@@ -208,7 +208,7 @@ main div#ending_message {
 /* ------------ */
 /* -- VARIABLES -- */
 /* --------------- */
-/* line 21 */
+/* line 31 */
 img[alt="logo"] {
   max-width: 140px;
   border: solid lightgray 1px;
@@ -217,7 +217,7 @@ img[alt="logo"] {
   box-shadow: 0 0 10px #ccc;
 }
 
-/* line 25 */
+/* line 35 */
 img[alt="avatar"] {
   max-width: 120px;
   border-radius: 50%;
@@ -225,13 +225,13 @@ img[alt="avatar"] {
   -webkit-border-radius: 50%;
 }
 
-/* line 30 */
+/* line 40 */
 blockquote {
   margin-top: 2rem !important;
   margin-bottom: 2rem;
 }
 
-/* line 35 */
+/* line 45 */
 blockquote:before {
   content: "\201C";
   display: block;
@@ -241,31 +241,31 @@ blockquote:before {
 }
 
 /* Algunos elementos de contenido no se muestran en pantallas pequeñas */
-/* line 44 */
+/* line 54 */
 .movilno {
   display: none;
 }
 
-/* line 48 */
+/* line 58 */
 aside {
   background-color: #99c3e9;
 }
-/* line 49 */
+/* line 59 */
 aside div#user_meta {
   padding: 5px;
 }
 
-/* line 56 */
+/* line 66 */
 main article {
   max-width: 95%;
   padding: 15px 25px;
 }
-/* line 60 */
+/* line 70 */
 main article img,
 main article iframe[src*=youtube] {
   max-width: 100%;
 }
-/* line 65 */
+/* line 75 */
 main article img {
   margin: 2em auto 1em auto;
   display: block;
@@ -274,12 +274,12 @@ main article img {
   -moz-box-shadow: 0 0 10px #ccc;
   box-shadow: 0 0 10px #ccc;
 }
-/* line 71 */
+/* line 81 */
 main article .tituloimagen {
   font-style: italic;
   text-align: center;
 }
-/* line 77 */
+/* line 87 */
 main article iframe[src*=youtube] {
   display: block;
   margin: 2rem auto;
@@ -288,62 +288,62 @@ main article iframe[src*=youtube] {
   -moz-box-shadow: 0 0 10px #ccc;
   box-shadow: 0 0 10px #ccc;
 }
-/* line 83 */
+/* line 93 */
 main article iframe[src*=youtube] + .tituloimagen {
   margin-top: -1rem;
 }
-/* line 89 */
+/* line 99 */
 main div#ending_message {
   padding-top: 2em;
   text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 97 */
+  /* line 107 */
   aside {
     width: 17%;
     background-image: url("/theme/images/costa.jpg");
     background-position: 77% -65%;
     background-repeat: no-repeat;
   }
-  /* line 100 */
+  /* line 110 */
   aside div#user_meta {
     padding: 30px;
     max-width: none;
   }
 
-  /* line 108 */
+  /* line 118 */
   main {
     width: 83%;
     left: 17%;
   }
-  /* line 111 */
+  /* line 121 */
   main article {
     max-width: 90%;
     padding: 15px 40px;
   }
-  /* line 115 */
+  /* line 125 */
   main article img,
   main article iframe[src*=youtube] {
     max-width: 60%;
   }
-  /* line 122 */
+  /* line 132 */
   main img.right {
     margin: 0 1em 1em 1em;
     float: right;
   }
 
-  /* line 129 */
+  /* line 139 */
   .movilno {
     display: inline;
   }
 
-  /* line 133 */
+  /* line 143 */
   blockquote {
     width: 30rem;
   }
 
-  /* line 137 */
+  /* line 147 */
   blockquote:after {
     content: "\201D";
     font-size: 3rem;
@@ -354,45 +354,45 @@ main div#ending_message {
 }
 /* --------------------------------------------------------------- */
 /* FUENTES */
-/* line 151 */
+/* line 161 */
 body {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
 
-/* line 157 */
+/* line 167 */
 h1 {
   font-size: 1.5rem;
 }
 
-/* line 161 */
+/* line 171 */
 h2 {
   font-size: 1.25rem;
 }
 
-/* line 165 */
+/* line 175 */
 h3 {
   font-size: 1.1rem;
 }
 
-/* line 169 */
+/* line 179 */
 h1, h2, h3, #title, #subtitle, #description {
   font-family: "Merriweather", serif;
 }
 
-/* line 173 */
+/* line 183 */
 #subtitle {
   font-weight: normal;
   font-style: italic;
 }
 
-/* line 178 */
+/* line 188 */
 #description {
   line-height: 1.5em;
   font-style: italic;
 }
 
-/* line 186 */
+/* line 196 */
 header p a {
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -402,24 +402,24 @@ header p a {
   color: #4d4d4d;
   margin-right: 1rem;
 }
-/* line 193 */
+/* line 203 */
 header p a:hover {
   background-color: rgba(153, 195, 233, 0.2);
 }
 
-/* line 199 */
+/* line 209 */
 main article {
   text-align: justify;
 }
-/* line 201 */
+/* line 211 */
 main article div.article_text {
   line-height: 1.5em;
 }
-/* line 204 */
+/* line 214 */
 main article div.article_meta {
   font-size: 0.8rem;
 }
-/* line 208 */
+/* line 218 */
 main article a.readmore {
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -431,55 +431,34 @@ main article a.readmore {
   margin-left: 1rem;
   font-style: italic;
 }
-/* line 217 */
+/* line 227 */
 main article a.readmore:hover {
   background-color: rgba(153, 195, 233, 0.1);
 }
-/* line 221 */
-main article .warning {
-  display: block;
-  margin: 1.5rem auto;
-}
-/* line 224 */
-main article .warning span {
-  border-radius: 7px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border: 2px solid #ff0000;
-  padding: 5px 1rem;
-  color: #ff0000;
-  font-style: italic;
-  background-color: rgba(255, 0, 0, 0.02);
-}
-/* line 231 */
-main article .warning span .fa {
-  margin-right: 0.5rem;
-  margin-left: -0.5rem;
-}
-/* line 239 */
+/* line 233 */
 main header {
   padding: 0.25rem 40px;
 }
-/* line 242 */
+/* line 236 */
 main header p {
   font-weight: normal;
   font-size: 0.9rem;
 }
-/* line 248 */
+/* line 242 */
 main div#ending_message {
   font-size: 0.8rem;
 }
 
-/* line 255 */
+/* line 249 */
 aside div#user_meta p, aside div#user_meta ul {
   font-size: 0.8rem;
 }
-/* line 259 */
+/* line 253 */
 aside div#user_meta ul li a {
   border: 1px solid #eeeeee;
   color: #eeeeee;
 }
-/* line 263 */
+/* line 257 */
 aside div#user_meta ul li a:hover {
   border-width: 2px;
   font-weight: bold;
@@ -487,13 +466,102 @@ aside div#user_meta ul li a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 274 */
+  /* line 268 */
   main article {
     text-align: left;
   }
-  /* line 278 */
+  /* line 272 */
   main article .warning span {
     padding: 5px 3.5rem 5px 4rem;
     font-size: larger;
+  }
+}
+/* --------------------------------------------------------------- */
+/* MENSAJES */
+/* line 288 */
+main article .info,
+main article .success,
+main article .warning,
+main article .error {
+  margin: 10px auto;
+  display: block;
+  max-width: 90%;
+  padding: 5px 1rem;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border: 2px solid;
+  text-align: center;
+}
+/* line 301 */
+main article .info {
+  color: #00529B;
+  border-color: #00529B;
+  background-color: rgba(0, 0, 255, 0);
+}
+/* line 307 */
+main article .success {
+  color: #4F8A10;
+  border-color: #4F8A10;
+  background-color: rgba(0, 255, 0, 0.07);
+}
+/* line 313 */
+main article .warning {
+  color: #9F6000;
+  border-color: #9F6000;
+  background-color: rgba(255, 255, 0, 0.2);
+}
+/* line 319 */
+main article .error {
+  color: #ff0000;
+  border-color: #ff0000;
+  background-color: rgba(255, 0, 0, 0.07);
+}
+/* line 325 */
+main article .info:before,
+main article .success:before,
+main article .warning:before,
+main article .error:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120%;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.2em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 347 */
+main article .info:before {
+  content: "\f05a";
+}
+/* line 351 */
+main article .success:before {
+  content: '\f00c';
+}
+/* line 355 */
+main article .warning:before {
+  content: '\f071';
+}
+/* line 359 */
+main article .error:before {
+  content: '\f057';
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 370 */
+  main article .info,
+  main article .success,
+  main article .warning,
+  main article .error {
+    max-width: 50%;
   }
 }

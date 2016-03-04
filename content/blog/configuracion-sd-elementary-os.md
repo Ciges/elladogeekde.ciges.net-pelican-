@@ -1,7 +1,7 @@
 Title: Configuración de la tarjeta wifi y el lector de tarjetas SD en Elementary OS (Ubuntu) Linux (Intel Wireless N7260, chipset RTL 5287)
 Slug: configuracion-lector-sd-linux-n7260
 Date: 2016-02-23 16:28
-Tags: wifi drivers sd ubuntu linux elementaryos mountain
+Tags: wifi, drivers, sd, ubuntu, linux, elementaryos, mountain
 
 <!-- PELICAN_BEGIN_SUMMARY -->
 Hace algún tiempo, en Mayo del 2014, compré un portatil a la empresa [Mountain](ihttp://www.mountain.es/), en concreto el **Mountain Nickel 10**, un portátil de 14" con procesador Core i5 4310M Mobile a 2.7 GHz, equipo del que estoy muy contento. Mountain es una empresa española conocida por montar sus equipos en España y por fabricar productos de gran calidad.

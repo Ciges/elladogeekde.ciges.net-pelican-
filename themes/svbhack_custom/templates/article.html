@@ -17,7 +17,7 @@
   {% include "modules/article_meta.html" %}
   <div class="article_text">
     {% if article.status == "Draft" %}
-    <p class="warning" style="text-align: center;"><span><i class="fa fa-exclamation-triangle"></i> Este artículo es un borrador</span></p>
+    <p class="warning">Este artículo es un borrador</p>
     {% endif %}
 
     {{ article.content }}

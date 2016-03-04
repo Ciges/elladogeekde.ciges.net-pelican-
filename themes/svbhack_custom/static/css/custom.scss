@@ -15,6 +15,16 @@
 /* -- VARIABLES -- */
 $ancho-cita: 30;
 $ancho-barralateral: 17; // Porcentaje
+
+$color_info: #00529B;
+$color_info_fondo: rgba(0, 0, 255, 0.0);
+$color_success: #4F8A10;
+$color_success_fondo: rgba(0, 255, 0, 0.07);
+$color_warning: #9F6000;
+$color_warning_fondo: rgba(255, 255, 0, 0.2);
+$color_error: #ff0000;
+$color_error_fondo: rgba(255, 0, 0, 0.07);
+
 /* --------------- */
 
 
@@ -218,22 +228,6 @@ main {
           background-color: rgba(153,195,233, 0.1);
         }
 
-        .warning {
-            display: block;
-            margin: 1.5rem auto;
-            span {
-                @include border-radius(7px);
-                border: 2px solid #ff0000;
-                padding: 5px 1rem;
-                color: #ff0000;
-                font-style: italic;
-                background-color: rgba(255, 0, 0, 0.02);
-                .fa {
-                  margin-right: 0.5rem;
-                  margin-left: -0.5rem;
-                }
-            }
-        }
     }
 
     header {
@@ -283,4 +277,102 @@ aside {
         }
      }
 
+}
+
+/* --------------------------------------------------------------- */
+/* MENSAJES */
+
+main {
+    article {
+    
+        .info,
+        .success,
+        .warning,
+        .error {
+            margin: 10px auto;
+            display: block;
+            max-width: 90%;
+            padding: 5px 1rem;
+            @include border-radius(7px);
+            border: 2px solid;
+            text-align: center;
+        }
+
+        .info {
+            color: $color_info;
+            border-color: $color_info;
+            background-color: $color_info_fondo;
+        }
+
+        .success {
+            color: $color_success;
+            border-color: $color_success;
+            background-color: $color_success_fondo;
+        }
+
+        .warning {
+            color: $color_warning;
+            border-color: $color_warning; 
+            background-color: $color_warning_fondo;
+        }
+
+        .error {
+            color: $color_error;
+            border-color: $color_error;
+            background-color: $color_error_fondo;
+        }
+
+        .info:before,
+        .success:before,
+        .warning:before,
+        .error:before {
+            font-family:FontAwesome;
+            font-style:normal;
+            font-weight:400;
+            font-size: 120%;
+            speak:none;
+            display:inline-block;
+            text-decoration:inherit;
+            width:1em;
+            margin-right:1em;
+            text-align:center;
+            font-variant:normal;
+            text-transform:none;
+            line-height:1.2em;
+            margin-left:.2em;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale
+        }
+
+        .info:before {
+            content:"\f05a";
+        }
+
+        .success:before {
+            content:'\f00c';
+        }
+
+        .warning:before {
+            content:'\f071';
+        }
+
+        .error:before {
+            content:'\f057';
+        }
+
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    main  {
+        article  {
+            .info,
+            .success,
+            .warning,
+            .error  {
+                max-width: 50%;
+            }
+        }
+    }
 }
