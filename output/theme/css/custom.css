@@ -252,7 +252,7 @@ aside {
 }
 /* line 49 */
 aside div#user_meta {
-  padding: 30px;
+  padding: 5px;
 }
 
 /* line 56 */
@@ -261,80 +261,89 @@ main article {
   padding: 15px 25px;
 }
 /* line 60 */
+main article img,
+main article iframe[src*=youtube] {
+  max-width: 100%;
+}
+/* line 65 */
 main article img {
   margin: 2em auto 1em auto;
-  max-width: 60%;
   display: block;
   border: solid lightgray 1px;
   -webkit-box-shadow: 0 0 10px #ccc;
   -moz-box-shadow: 0 0 10px #ccc;
   box-shadow: 0 0 10px #ccc;
 }
-/* line 67 */
+/* line 71 */
 main article .tituloimagen {
   font-style: italic;
   text-align: center;
 }
-/* line 73 */
+/* line 77 */
 main article iframe[src*=youtube] {
   display: block;
   margin: 2rem auto;
-  max-width: 60%;
   border: solid lightgray 1px;
   -webkit-box-shadow: 0 0 10px #ccc;
   -moz-box-shadow: 0 0 10px #ccc;
   box-shadow: 0 0 10px #ccc;
 }
-/* line 80 */
+/* line 83 */
 main article iframe[src*=youtube] + .tituloimagen {
   margin-top: -1rem;
 }
-/* line 86 */
+/* line 89 */
 main div#ending_message {
   padding-top: 2em;
   text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 94 */
+  /* line 97 */
   aside {
-    width: 15%;
+    width: 17%;
     background-image: url("/theme/images/costa.jpg");
     background-position: 77% -65%;
     background-repeat: no-repeat;
   }
-  /* line 97 */
+  /* line 100 */
   aside div#user_meta {
+    padding: 30px;
     max-width: none;
   }
 
-  /* line 104 */
+  /* line 108 */
   main {
-    width: 85%;
-    left: 15%;
+    width: 83%;
+    left: 17%;
   }
-  /* line 107 */
+  /* line 111 */
   main article {
     max-width: 90%;
     padding: 15px 40px;
   }
-  /* line 112 */
+  /* line 115 */
+  main article img,
+  main article iframe[src*=youtube] {
+    max-width: 60%;
+  }
+  /* line 122 */
   main img.right {
     margin: 0 1em 1em 1em;
     float: right;
   }
 
-  /* line 119 */
+  /* line 129 */
   .movilno {
     display: inline;
   }
 
-  /* line 123 */
+  /* line 133 */
   blockquote {
     width: 30rem;
   }
 
-  /* line 127 */
+  /* line 137 */
   blockquote:after {
     content: "\201D";
     font-size: 3rem;
@@ -345,45 +354,45 @@ main div#ending_message {
 }
 /* --------------------------------------------------------------- */
 /* FUENTES */
-/* line 141 */
+/* line 151 */
 body {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
 
-/* line 147 */
+/* line 157 */
 h1 {
   font-size: 1.5rem;
 }
 
-/* line 151 */
+/* line 161 */
 h2 {
   font-size: 1.25rem;
 }
 
-/* line 155 */
+/* line 165 */
 h3 {
   font-size: 1.1rem;
 }
 
-/* line 159 */
+/* line 169 */
 h1, h2, h3, #title, #subtitle, #description {
   font-family: "Merriweather", serif;
 }
 
-/* line 163 */
+/* line 173 */
 #subtitle {
   font-weight: normal;
   font-style: italic;
 }
 
-/* line 168 */
+/* line 178 */
 #description {
   line-height: 1.5em;
   font-style: italic;
 }
 
-/* line 176 */
+/* line 186 */
 header p a {
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -393,24 +402,24 @@ header p a {
   color: #4d4d4d;
   margin-right: 1rem;
 }
-/* line 183 */
+/* line 193 */
 header p a:hover {
   background-color: rgba(153, 195, 233, 0.2);
 }
 
-/* line 189 */
+/* line 199 */
 main article {
   text-align: justify;
 }
-/* line 191 */
+/* line 201 */
 main article div.article_text {
   line-height: 1.5em;
 }
-/* line 194 */
+/* line 204 */
 main article div.article_meta {
   font-size: 0.8rem;
 }
-/* line 198 */
+/* line 208 */
 main article a.readmore {
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -422,16 +431,16 @@ main article a.readmore {
   margin-left: 1rem;
   font-style: italic;
 }
-/* line 207 */
+/* line 217 */
 main article a.readmore:hover {
   background-color: rgba(153, 195, 233, 0.1);
 }
-/* line 211 */
+/* line 221 */
 main article .warning {
   display: block;
   margin: 1.5rem auto;
 }
-/* line 214 */
+/* line 224 */
 main article .warning span {
   border-radius: 7px;
   -moz-border-radius: 7px;
@@ -442,35 +451,35 @@ main article .warning span {
   font-style: italic;
   background-color: rgba(255, 0, 0, 0.02);
 }
-/* line 221 */
+/* line 231 */
 main article .warning span .fa {
   margin-right: 0.5rem;
   margin-left: -0.5rem;
 }
-/* line 229 */
+/* line 239 */
 main header {
   padding: 0.25rem 40px;
 }
-/* line 232 */
+/* line 242 */
 main header p {
   font-weight: normal;
   font-size: 0.9rem;
 }
-/* line 238 */
+/* line 248 */
 main div#ending_message {
   font-size: 0.8rem;
 }
 
-/* line 245 */
+/* line 255 */
 aside div#user_meta p, aside div#user_meta ul {
   font-size: 0.8rem;
 }
-/* line 249 */
+/* line 259 */
 aside div#user_meta ul li a {
   border: 1px solid #eeeeee;
   color: #eeeeee;
 }
-/* line 253 */
+/* line 263 */
 aside div#user_meta ul li a:hover {
   border-width: 2px;
   font-weight: bold;
@@ -478,11 +487,11 @@ aside div#user_meta ul li a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 264 */
+  /* line 274 */
   main article {
     text-align: left;
   }
-  /* line 268 */
+  /* line 278 */
   main article .warning span {
     padding: 5px 3.5rem 5px 4rem;
     font-size: larger;

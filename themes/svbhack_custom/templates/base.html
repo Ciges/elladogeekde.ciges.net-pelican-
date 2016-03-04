@@ -52,9 +52,9 @@
       </a>
       <h2 id="title"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h2>
       {% if SITESUBTITLE %}<h3 id="subtitle">{{ SITESUBTITLE }}</h3>{% endif %}
-      {% if DESCRIPTION %}<p id="description">{{ DESCRIPTION }}</p>{% endif %}
+      {% if DESCRIPTION %}<p id="description" class="movilno">{{ DESCRIPTION }}</p>{% endif %}
       <p>{{ TAGLINE }}</p>
-      <ul>
+      <ul class="movilno">
         {% for title, link in MENUITEMS %}
         <li><a href="{{ link }}">{{ title }}</a></li>
         {% endfor %}

@@ -14,7 +14,7 @@
 
 /* -- VARIABLES -- */
 $ancho-cita: 30;
-$ancho-barralateral: 15; // Porcentaje
+$ancho-barralateral: 17; // Porcentaje
 /* --------------- */
 
 
@@ -47,7 +47,7 @@ blockquote:before {
 
 aside {
     div#user_meta {
-        padding: 30px;
+        padding: 5px;
     }
     background-color: #99c3e9;
 }
@@ -57,9 +57,13 @@ main {
         max-width: 95%;
         padding: 15px 25px;
 
+        img,
+        iframe[src *= youtube] {
+          max-width: 100%;
+        }
+
         img {
           margin: 2em auto 1em auto;
-          max-width: 60%;
           display: block;
           @include box-shadow;
         }
@@ -73,7 +77,6 @@ main {
         iframe[src *= youtube] {
             display: block;
             margin: 2rem auto;
-            max-width: 60%;
             @include box-shadow;
         }
 
@@ -95,6 +98,7 @@ main {
         width: $ancho-barralateral * 1%;
 
         div#user_meta {
+            padding: 30px;
             max-width: none;
         }
         background-image: url("/theme/images/costa.jpg");
@@ -107,6 +111,12 @@ main {
         article {
             max-width: 90%;
             padding: 15px 40px;
+
+            img,
+            iframe[src *= youtube] {
+              max-width: 60%;
+            }
+
         }
 
         img.right {
