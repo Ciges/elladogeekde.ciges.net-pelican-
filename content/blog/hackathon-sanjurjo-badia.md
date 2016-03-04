@@ -39,9 +39,20 @@ Llega el momento. Hay proyectos muy buenos y nos toca presentar el nuestro, una 
 
 ![foto_de_equipo_2]({filename}/images/hackathon_sanjurjo_badia_terminamos.jpg)
 
-Nuestro agradecimiento a [Vigolabs](http://hacksb.vigolabs.gal/), a las empresas patrocinadoras y a **Jesús Sayar** y **Eloy Coto** en particular por el enooorme trabajo que ha supuesto organizar un evento como el [Hackathon Sanjunrjo Badía](http://hacksb.vigolabs.gal/)
-.
-Para algunos ha sido la primera vez que participamos en un hackathon, seguro que repetimos si nuestras respectivas agendas lo permiten.  Animamos a profesionales y aficionados del sector a hacerlo. Independientemente del resultado, es una experiencia que vale la pena.
+Nuestro agradecimiento a [Vigolabs](http://hacksb.vigolabs.gal/), a las empresas patrocinadoras y a **Jesús Sayar** y **Eloy Coto** en particular por el enooorme trabajo que ha supuesto organizar un evento como el [Hackathon Sanjunrjo Badía](http://hacksb.vigolabs.gal/).
+
+Para algunos ha sido la primera vez que participamos en un hackathon, seguro que repetimos si nuestras respectivas agendas lo permiten.  
+
+Y para muestra de lo que allí se vivió, un botón, un pequeño vídeo en *time-lapse*
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nUFrseWzso8?rel=0" frameborder="0" allowfullscreen></iframe>
+¡colabora, construye y disfruta!
+{: .tituloimagen}
+
+Animamos a profesionales y aficionados del sector a hacerlo. Independientemente del resultado, es una experiencia que vale la pena.
+
+
+
 
 > Sal de tu zona de confort. Sólo se puede crecer si estás dispuesto a sentirte incómodo al intentar algo nuevo
 >

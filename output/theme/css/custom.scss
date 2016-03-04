@@ -28,6 +28,7 @@ img[alt="avatar"] {
 }
 
 blockquote {
+    margin-top: 2rem !important;
     margin-bottom: 2rem;
 }
 
@@ -68,12 +69,25 @@ main {
             text-align: center;
         }
 
+        // Vídeos de Youtube
+        iframe[src *= youtube] {
+            display: block;
+            margin: 2rem auto;
+            max-width: 60%;
+            @include box-shadow;
+        }
+
+        iframe[src *= youtube] + .tituloimagen {
+            margin-top: -1rem;
+        }
+
     }
 
     div#ending_message {
         padding-top: 2em;
         text-align: center;
     }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -194,20 +208,20 @@ main {
           background-color: rgba(153,195,233, 0.1);
         }
 
-        .warning
-          span {
-            @include border-radius(7px);
-            border: 2px solid #ff0000;
-            padding: 5px 3.5rem 5px 4rem;
-            font-size: bigger;
-            color: #ff0000;
-            font-style: italic;
-            background-color: rgba(255, 0, 0, 0.02);
-            .fa {
-              margin-right: 0.5rem;
-              margin-left: -0.5rem;
+        .warning {
+            span {
+                @include border-radius(7px);
+                border: 2px solid #ff0000;
+                padding: 5px 1rem;
+                color: #ff0000;
+                font-style: italic;
+                background-color: rgba(255, 0, 0, 0.02);
+                .fa {
+                  margin-right: 0.5rem;
+                  margin-left: -0.5rem;
+                }
             }
-          }
+        }
     }
 
     header {
@@ -247,7 +261,14 @@ aside {
     main {
         article {
             text-align: left;
+
+            .warning {
+                span {
+                  padding: 5px 3.5rem 5px 4rem;
+                  font-size: larger;
+                }
+            }
         }
-    }
+     }
 
 }
