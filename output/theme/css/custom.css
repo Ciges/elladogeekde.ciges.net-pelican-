@@ -395,30 +395,45 @@ main article a.readmore {
 main article a.readmore:hover {
   background-color: rgba(0, 0, 0, 0.02);
 }
-/* line 184 */
+/* line 182 */
+main article .warning {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 2px solid #ff0000;
+  padding: 5px 15px 5px 15px;
+  font-size: smaller;
+  color: #ff0000;
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  font-style: italic;
+  background-color: rgba(255, 0, 0, 0.02);
+}
+/* line 196 */
 main header {
   padding: 0.25rem 40px;
 }
-/* line 187 */
+/* line 199 */
 main header p {
   font-weight: normal;
   font-size: 0.9rem;
 }
-/* line 193 */
+/* line 205 */
 main div#ending_message {
   font-size: 0.8rem;
 }
 
-/* line 200 */
+/* line 212 */
 aside div#user_meta p, aside div#user_meta ul {
   font-size: 0.8rem;
 }
-/* line 204 */
+/* line 216 */
 aside div#user_meta ul li a {
   border: 1px solid #eeeeee;
   color: #eeeeee;
 }
-/* line 208 */
+/* line 220 */
 aside div#user_meta ul li a:hover {
   border-width: 2px;
   font-weight: bold;
@@ -426,7 +441,7 @@ aside div#user_meta ul li a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 219 */
+  /* line 231 */
   main article {
     text-align: left;
   }

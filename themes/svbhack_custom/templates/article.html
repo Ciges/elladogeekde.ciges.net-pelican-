@@ -12,14 +12,18 @@
   </div>
   {% include "modules/article_meta.html" %}
   <div class="article_text">
+    {% if article.status == "Draft" %}
+    <p class="warning">Este artículo es un borrador</p>
+    {% endif %}
+
     {{ article.content }}
   </div>
 
-  {% if CONEXION_INTERNET %}
+  {% if CONEXION_INTERNET and article.status != "Draft" %}
   {% include "modules/addthis.html" %}
   {% endif %}
 
-  {% if CONEXION_INTERNET %}
+  {% if CONEXION_INTERNET and article.status != "Draft" %}
   {% if DISQUS_SITENAME %}
   <div id="article_comments">
     <div id="disqus_thread"></div>
