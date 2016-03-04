@@ -1,4 +1,4 @@
-/* style.scss */
+@import 'style';
 
 /* Estilos personalizados que "sobreescribirán" a los estilos definidos originalmente en el tema svbhack */
 
@@ -10,20 +10,11 @@
   box-shadow: $top $left $blur $color;
 }
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  border-radius: $radius;
-  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
-}
-
 /* ------------ */
 
 /* -- VARIABLES -- */
 $ancho-cita: 30;
 $ancho-barralateral: 18; // Porcentaje
-
-$light-grey:  #eeeeee;
 /* --------------- */
 
 

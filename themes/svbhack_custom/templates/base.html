@@ -8,9 +8,6 @@
   <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700|Merriweather:300,400&amp;subset=latin,latin-ext" rel="stylesheet">
   {% endif %}
 
-  {% assets filters="scss", output="css/style.css", "css/style.scss" %}
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
-  {% endassets %}
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
   <!-- Modificación de estilos con respecto al svbhack original -->
   {% assets filters="scss", output="css/custom.css", "css/custom.scss" %}
