@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../theme/css/style.css?1e299ceb">
   <link rel="stylesheet" type="text/css" href="../../theme/css/pygments.css">
   <!-- Modificación de estilos con respecto al svbhack original -->
-  <link rel="stylesheet" href="../../theme/css/custom.css?0aaba171">
+  <link rel="stylesheet" href="../../theme/css/custom.css?f2de8095">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
   <meta charset="utf-8" />
@@ -61,19 +61,20 @@
   <div class="article_title">
     <h1><a href="../../blog/configuracion-lector-sd-linux-n7260">Configuración de la tarjeta wifi y el lector de tarjetas SD en Elementary OS (Ubuntu) Linux (Intel Wireless N7260, chipset RTL 5287)</a></h1>
   </div>
-  <div class="article_meta">
-    <p>Publicado el: mar 23 febrero 2016</p>
+<div class="article_meta">
+  <p>Publicado el: mar 23 febrero 2016 -
 Etiquetas:
-      <a href="../../tag/wifi-drivers-sd-ubuntu-linux-elementaryos-mountain.html">wifi drivers sd ubuntu linux elementaryos mountain</a>    </p>
-  </div>
-  <div class="article_text">
-    <p>Hace algún tiempo, en Mayo del 2014, compré un portatil a la empresa <a href="ihttp://www.mountain.es/">Mountain</a>, en concreto el <strong>Mountain Nickel 10</strong>, un portátil de 14" con procesador Core i5 4310M Mobile a 2.7 GHz, equipo del que estoy muy contento. Mountain es una empresa española conocida por montar sus equipos en España y por fabricar productos de gran calidad.</p>
+    <a href="../../tag/wifi-drivers-sd-ubuntu-linux-elementaryos-mountain.html">wifi drivers sd ubuntu linux elementaryos mountain</a>  </p>
+</div>  <div class="article_text">
+    
+<p>Hace algún tiempo, en Mayo del 2014, compré un portatil a la empresa <a href="ihttp://www.mountain.es/">Mountain</a>, en concreto el <strong>Mountain Nickel 10</strong>, un portátil de 14" con procesador Core i5 4310M Mobile a 2.7 GHz, equipo del que estoy muy contento. Mountain es una empresa española conocida por montar sus equipos en España y por fabricar productos de gran calidad.</p>
 <p><img alt="Imagen de un portátil Mountain" class="right" src="../../images/portatil_mountain.jpg" style="width: 345px; height: auto;"/></p>
 <p>Tengo instalado un sistema operativo <strong>Linux</strong>, en concreto una <a href="https://elementary.io/es/">Elementary OS</a>, distribución basada en <a href="http://www.ubuntu.com/">Ubuntu</a> y me encontré con que parte del hardware es demasiado <em>moderno</em> para la versión del kernel incluída por defecto.</p>
 <p>No me funcionan los siguientes dispositivos:</p>
 <ul>
 <li>La tarjeta de red Wifi, una <em>Intel Wireless N7260</em></li>
-<li>El lector de tarjetas SD, con chipset <em>Realtek 5287</em></li>
+<li>El lector de tarjetas SD, con chipset <em>Realtek 5287</em>
+</li>
 </ul>
 <p>Los pasos para solucionarlo han sido:</p>
 <ol>
@@ -82,8 +83,8 @@ Etiquetas:
 </ol>
 <h2>Actualización al kernel a la versión 3.19.8</h2>
 <p>Para actualizarlo cogí la <strong>última version disponible de la serie 3 del kernel, la <em>3.19.8</em>, descargando los tres paquetes .deb, dos para las cabeceras y uno para el kernel, directamente desde <a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19.8-vivid/">la web del PPA del kernel de Ubuntu</a></strong> e instalándolos manualmente con <em>dpkg</em></p>
-<div class="highlight"><pre><span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="o">-</span><span class="mf">3.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mf">908_3.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mf">908.201505110938_</span><span class="n">all</span><span class="o">.</span><span class="n">deb</span> 
-<span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="o">-</span><span class="mf">3.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mi">908</span><span class="o">-</span><span class="n">generic_3</span><span class="mf">.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mf">908.2015</span><span class="n">s5110938_amd64</span><span class="o">.</span><span class="n">deb</span> 
+<div class="highlight"><pre><span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="o">-</span><span class="mf">3.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mf">908_3.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mf">908.201505110938_</span><span class="n">all</span><span class="o">.</span><span class="n">deb</span>
+<span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="o">-</span><span class="mf">3.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mi">908</span><span class="o">-</span><span class="n">generic_3</span><span class="mf">.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mf">908.2015</span><span class="n">s5110938_amd64</span><span class="o">.</span><span class="n">deb</span>
 <span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">linux</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="mf">3.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mi">908</span><span class="o">-</span><span class="n">lowlatency_3</span><span class="mf">.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mf">908.201505110938_</span><span class="n">amd64</span><span class="o">.</span><span class="n">deb</span>
 </pre></div>
 <h2>Actualización del firmware para los drivers de la tarjeta WiFi</h2>
@@ -104,7 +105,7 @@ Etiquetas:
 <p>Be Free! Be Wild! Be Linux!</p>
 </blockquote>
   </div>
-  
+
 <script type="text/javascript">
 var addthis_share = {
      // ... other options

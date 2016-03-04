@@ -10,19 +10,11 @@
   <div class="article_title">
     <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
   </div>
-  <div class="article_meta">
-    <p>Publicado el: {{ article.locale_date }}</p>
-      {% if article.tags %}Etiquetas:
-      {% for tag in article.tags %}
-      <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
-      {% endfor %}
-      {% endif %}
-    </p>
-  </div>
+  {% include "modules/article_meta.html" %}
   <div class="article_text">
     {{ article.content }}
   </div>
-  
+
   {% if CONEXION_INTERNET %}
   {% include "modules/addthis.html" %}
   {% endif %}

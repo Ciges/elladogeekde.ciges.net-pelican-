@@ -51,7 +51,7 @@ ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
 #THEME="/var/www/elladogeekde.ciges.net/themes/notmyidea_custom"
 THEME="/var/www/elladogeekde.ciges.net/themes/svbhack_custom"
 PLUGIN_PATHS = [ "/var/www/elladogeekde.ciges.net/plugins" ]
-PLUGINS = [ "optimize_images", "better_figures_and_images", "liquid_tags.img", "assets" ]
+PLUGINS = [ "optimize_images", "better_figures_and_images", "liquid_tags.img", "assets" , "summary" ]
 
 # Comentarios con Disqus
 DISQUS_SITENAME = "elladogeekdeciges"

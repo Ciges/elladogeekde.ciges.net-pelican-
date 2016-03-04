@@ -9,11 +9,21 @@
   -moz-box-shadow: $top $left $blur $color;
   box-shadow: $top $left $blur $color;
 }
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
 /* ------------ */
 
 /* -- VARIABLES -- */
 $ancho-cita: 30;
 $ancho-barralateral: 18; // Porcentaje
+
+$light-grey:  #eeeeee;
 /* --------------- */
 
 
@@ -23,10 +33,7 @@ img[alt="logo"] {
 }
 img[alt="avatar"] {
   max-width: 120px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  background-clip: padding-box;
+  @include border-radius(50%);
 }
 
 blockquote {
@@ -166,6 +173,20 @@ main {
         }
         div.article_meta {
             font-size: 0.8rem;
+        }
+
+        a.readmore {
+          @include border-radius(10px);
+          border: 2px solid $light-grey;
+          padding: 5px 15px 5px 15px;
+          font-size: smaller;
+          color: #4d4d4d;
+          margin-left: 1rem;
+          font-style: italic;
+        }
+        a.readmore:hover {
+          //border-width: 2px;
+          background-color: rgba(0, 0, 0, 0.02);
         }
     }
 

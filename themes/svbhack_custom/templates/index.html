@@ -5,9 +5,13 @@
   <div class="article_title">
     <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
   </div>
+  {% include "modules/article_meta.html" %}
   <div class="article_text">
     {{ article.summary }}
   </div>
+  <br />
+  <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">Seguir leyendo ...</a>
+  <br />
 </article>
 {% if not loop.last %}
 <hr />

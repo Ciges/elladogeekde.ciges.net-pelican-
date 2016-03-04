@@ -1,8 +1,9 @@
 Title: Configuración de la tarjeta wifi y el lector de tarjetas SD en Elementary OS (Ubuntu) Linux (Intel Wireless N7260, chipset RTL 5287)
 Slug: configuracion-lector-sd-linux-n7260
 Date: 2016-02-23 16:28
-Tags: wifi drivers sd ubuntu linux elementaryos mountain 
+Tags: wifi drivers sd ubuntu linux elementaryos mountain
 
+<!-- PELICAN_BEGIN_SUMMARY -->
 Hace algún tiempo, en Mayo del 2014, compré un portatil a la empresa [Mountain](ihttp://www.mountain.es/), en concreto el **Mountain Nickel 10**, un portátil de 14" con procesador Core i5 4310M Mobile a 2.7 GHz, equipo del que estoy muy contento. Mountain es una empresa española conocida por montar sus equipos en España y por fabricar productos de gran calidad.
 
 ![Imagen de un portátil Mountain]({filename}/images/portatil_mountain.jpg){.right}
@@ -13,6 +14,7 @@ No me funcionan los siguientes dispositivos:
 
 - La tarjeta de red Wifi, una *Intel Wireless N7260*
 - El lector de tarjetas SD, con chipset *Realtek 5287*
+<!-- PELICAN_END_SUMMARY -->
 
 Los pasos para solucionarlo han sido:
 
@@ -23,8 +25,8 @@ Los pasos para solucionarlo han sido:
 
 Para actualizarlo cogí la **última version disponible de la serie 3 del kernel, la *3.19.8*, descargando los tres paquetes .deb, dos para las cabeceras y uno para el kernel, directamente desde [la web del PPA del kernel de Ubuntu](http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19.8-vivid/)** e instalándolos manualmente con *dpkg*
 
-    dpkg -i linux-headers-3.19.8-031908_3.19.8-031908.201505110938_all.deb 
-    dpkg -i linux-headers-3.19.8-031908-generic_3.19.8-031908.2015s5110938_amd64.deb 
+    dpkg -i linux-headers-3.19.8-031908_3.19.8-031908.201505110938_all.deb
+    dpkg -i linux-headers-3.19.8-031908-generic_3.19.8-031908.2015s5110938_amd64.deb
     dpkg -i linux-image-3.19.8-031908-lowlatency_3.19.8-031908.201505110938_amd64.deb
 
 ## Actualización del firmware para los drivers de la tarjeta WiFi
@@ -49,4 +51,3 @@ Para posteriormente instalarlo de la manera habitual:
 Resuelto :-)
 
 > Be Free! Be Wild! Be Linux!
-
