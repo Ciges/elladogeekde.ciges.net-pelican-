@@ -2,7 +2,6 @@ Title:  Hackathon Sanjurjo Badía, de idea a proyecto viable
 Slug: hackathon-sanjurjo-badia
 Date: 2016-03-04
 Tags:  hackathon, iot, udoo, raspberry, arduino
-Status: Draft
 
 <!-- PELICAN_BEGIN_SUMMARY -->
 En dos palabras, **¡IM PRESIONANTE!** :-).
