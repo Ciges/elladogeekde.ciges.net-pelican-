@@ -38,7 +38,7 @@ Llega el momento. Hay proyectos muy buenos y nos toca presentar el nuestro, una 
 
 ![foto_de_equipo_2]({filename}/images/hackathon_sanjurjo_badia_terminamos.jpg)
 
-Nuestro agradecimiento a [Vigolabs](http://hacksb.vigolabs.gal/), a las empresas patrocinadoras y a **Jesús Sayar** y **Eloy Coto** en particular por el enooorme trabajo que ha supuesto organizar un evento como el [Hackathon Sanjunrjo Badía](http://hacksb.vigolabs.gal/).
+Nuestro agradecimiento a [Vigolabs](http://hacksb.vigolabs.gal/), a las empresas patrocinadoras, al [Concello de Vigo](http://hoxe.vigo.org/) por todo su apoyo, y a **Jesús Sayar** y **Eloy Coto** en particular por el enooorme trabajo que ha supuesto organizar un evento como el [Hackathon Sanjunrjo Badía](http://hacksb.vigolabs.gal/).
 
 Para algunos ha sido la primera vez que participamos en un hackathon, seguro que repetimos si nuestras respectivas agendas lo permiten.  
 
