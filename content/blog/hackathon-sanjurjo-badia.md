@@ -6,7 +6,7 @@ Tags:  hackathon, iot, udoo, raspberry, arduino
 <!-- PELICAN_BEGIN_SUMMARY -->
 En dos palabras, **¡IM PRESIONANTE!** :-).
 
-Saliendo ya de la nube después de un intenso fin de semana. Adam, David, Jorge y José Manuel decidimos pasar el 28 y 29 de febrero [jugando a hacer “puzzles”](http://hacksb.vigolabs.gal/es/). Un caja de cartón, un “mini ordenador”, sensores, cables, varios lenguajes de programación y una idea, construir entre todos un dispositivo interesante y que además, funcione, una nasa “inteligente”.
+Saliendo ya de la nube después de un intenso fin de semana. [Adam](https://twitter.com/Adoankim), [David](https://twitter.com/daconstenla), [Jorge](https://www.facebook.com/jorge.martinezsantiago.12) y [José Manuel](https://twitter.com/Ciges) decidimos pasar el 28 y 29 de febrero [jugando a hacer “puzzles”](http://hacksb.vigolabs.gal/es/). Un caja de cartón, un “mini ordenador”, sensores, cables, varios lenguajes de programación y una idea, construir entre todos un dispositivo interesante y que además, funcione, una nasa “inteligente”.
 
 Llegamos, nos sentamos y tras el primer café asistimos a un par de charlas que nos van metiendo en el tema. Carlos Groba presenta a [Marine Instruments](http://www.marineinstruments.es/), una empresa gallega con sede en Nigrán, un caso de éxito con 100 empleados que ha desplegado 25.000 boyas interconectadas por todo el mundo para asistir a los atuneros con datos que les permitan tomar decisiones para pescar de forma más eficiente. Espectacular y un gran comienzo para entender la importancia económica de las nuevas tecnologías en un sector clave para Vigo, Galicia y España como es el marítimo.
 
@@ -34,11 +34,11 @@ Un fabricante local de nasas aparece por allí. Animado y muy hablador, le ha gu
 
 ... seguimos ...
 
-Llega el momento. Hay proyectos muy buenos y nos toca presentar el nuestro, una nasa con sensores capaz de enviar a un servicio web su posición y si hay “bicho” o no en su interior. Vaya, ¡hemos ganado gente! nos miramos entre nosotros con algo de sorpresa, estamos contentos de lo que hemos conseguido ya que  al fín y al cabo veníamos a jugar.
+Llega el momento. Hay proyectos muy buenos y nos toca presentar el nuestro, ***"[ai'nasa](https://www.hackster.io/enxe-eiros-da-nasa/ai-nasa-3e6bfb)"***, una nasa con sensores capaz de enviar a un servicio web su posición y si hay “bicho” o no en su interior. Vaya, ¡hemos ganado gente! nos miramos entre nosotros con algo de sorpresa, estamos contentos de lo que hemos conseguido ya que  al fín y al cabo veníamos a jugar.
 
 ![foto_de_equipo_2]({filename}/images/hackathon_sanjurjo_badia_terminamos.jpg)
 
-Nuestro agradecimiento a [Vigolabs](http://hacksb.vigolabs.gal/), a las empresas patrocinadoras, al [Concello de Vigo](http://hoxe.vigo.org/) por todo su apoyo, y a **Jesús Sayar** y **Eloy Coto** en particular por el enooorme trabajo que ha supuesto organizar un evento como el [Hackathon Sanjunrjo Badía](http://hacksb.vigolabs.gal/).
+Nuestro agradecimiento a [Vigolabs](http://hacksb.vigolabs.gal/), a las empresas patrocinadoras, al [Concello de Vigo](http://hoxe.vigo.org/) por todo su apoyo, y a **[Jesús Sayar](https://twitter.com/jsayar)** y **[Eloy Coto](https://twitter.com/eloycoto)** en particular por el enooorme trabajo que ha supuesto organizar un evento como el [Hackathon Sanjunrjo Badía](http://hacksb.vigolabs.gal/).
 
 Para algunos ha sido la primera vez que participamos en un hackathon, seguro que repetimos si nuestras respectivas agendas lo permiten.  
 
@@ -50,9 +50,17 @@ Y para muestra de lo que allí se vivió, un botón, un pequeño vídeo en *time
 
 Animamos a profesionales y aficionados del sector a hacerlo. Independientemente del resultado, es una experiencia que vale la pena.
 
-
-
-
 > Sal de tu zona de confort. Sólo se puede crecer si estás dispuesto a sentirte incómodo al intentar algo nuevo
 >
 > — <cite>Brian Tracy</cite>
+
+### Otros enlaces interesantes
+
+1. [Crónica de Javier Sanromán](http://jsanroman.net/2016/03/participamos-en-el-hackathon-sanjurjo-badia/)
+2. [Crónica del equipo de Initios *"Desarrollo Creativo de Aplicaciones"*](http://www.initios.com/dos-dias-desarrollo-creativo-hackathon-sanjurjo-badia/)
+3. [Artículo en el Faro de Vigo](http://www.farodevigo.es/mar/2016/02/29/proyecto-nasa-inteligente-triunfa-vigo/1413638.html)
+4. [Galería de fotos del Hackathón](https://www.flickr.com/photos/135050343@N06/sets/72157665168833225/), por Luís González Fernández
+
+
+
+

@@ -7,4 +7,5 @@ output/theme/.webassets-cache/
 output/theme/css/*.swp
 *.swp
 cache/
-
+*~
+.*

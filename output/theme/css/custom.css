@@ -1,6 +1,5 @@
-@charset "UTF-8";
 /* style.scss */
-/* line 14, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 14, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 body {
   margin: 0;
   padding: 0;
@@ -10,13 +9,13 @@ body {
   font-size: 18px;
 }
 
-/* line 23, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 23, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 a {
   color: #000000;
   text-decoration: none;
 }
 
-/* line 28, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 28, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 hr {
   color: #eeeeee;
   background-color: #eeeeee;
@@ -24,38 +23,38 @@ hr {
   border: none;
 }
 
-/* line 42, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 42, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 img {
   max-width: 100%;
 }
 
-/* line 47, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 47, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 aside div#user_meta {
   padding: 40px;
   text-align: center;
 }
-/* line 51, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 51, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 aside div#user_meta h2 {
   margin: 15px 0 5px 0;
 }
-/* line 55, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 55, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 aside div#user_meta p {
   margin: 0 0 15px 0;
   font-size: 14px;
 }
-/* line 60, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 60, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 aside div#user_meta ul {
   margin: 40px 0 0 0;
   padding-left: 0;
   font-size: 16px;
   list-style-type: none;
 }
-/* line 66, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 66, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 aside div#user_meta ul li {
   display: inline;
   line-height: 3em;
 }
-/* line 70, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 70, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 aside div#user_meta ul li a {
   padding: 5px 15px 5px 15px;
   border: 3px solid #eeeeee;
@@ -65,32 +64,32 @@ aside div#user_meta ul li a {
   color: #999999;
 }
 
-/* line 82, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 82, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main header {
   padding: 40px;
   border-top: #eeeeee 1px solid;
   border-bottom: #eeeeee 1px solid;
 }
-/* line 87, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 87, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main header p {
   font-weight: bold;
   font-size: 10px;
   text-transform: uppercase;
 }
-/* line 94, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 94, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main article {
   max-width: 640px;
   padding: 40px;
 }
-/* line 101, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 101, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main article div.article_text {
   line-height: 1.375em;
 }
-/* line 103, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 103, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main article div.article_text a {
   text-decoration: underline;
 }
-/* line 107, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 107, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main article div.article_text code {
   margin: 2px;
   padding: 0;
@@ -99,7 +98,7 @@ main article div.article_text code {
   font-family: "PT Mono", monospace;
   background: #eeeeee;
 }
-/* line 116, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 116, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main article div.article_text pre {
   margin: 22px 2px 22px 2px;
   padding: 2px;
@@ -111,28 +110,28 @@ main article div.article_text pre {
   line-height: 1.125em;
   overflow-x: auto;
 }
-/* line 128, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 128, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main article div.article_text blockquote {
   margin: 22px 2px 22px 2px;
   padding-left: 40px;
   color: #999999;
   font-style: italic;
 }
-/* line 136, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 136, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main article div.gist {
   line-height: .875em;
 }
-/* line 140, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 140, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main article div.article_meta {
   font-size: 12px;
   color: #999999;
 }
-/* line 146, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 146, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main footer {
   border-top: #eeeeee 1px solid;
   padding: 40px;
 }
-/* line 150, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 150, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main footer a.button_accent {
   padding: 10px;
   border: 2px solid #0e94ec;
@@ -143,17 +142,17 @@ main footer a.button_accent {
   color: #0e94ec;
   font-size: 18px;
 }
-/* line 157, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 157, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main footer a.button_accent:hover {
   color: #ffffff;
   background-color: #0e94ec;
 }
-/* line 161, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 161, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main footer a.button_accent:active {
   color: #ffffff;
   background-color: #0e94ec;
 }
-/* line 171, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+/* line 171, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
 main div#ending_message {
   border-top: #eeeeee 1px solid;
   padding: 0 40px 0 40px;
@@ -162,7 +161,7 @@ main div#ending_message {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 180, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+  /* line 180, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
   aside {
     width: 25%;
     height: 100%;
@@ -171,21 +170,21 @@ main div#ending_message {
     left: 0;
     border-right: #eeeeee 1px solid;
   }
-  /* line 188, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+  /* line 188, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
   aside h2 {
     margin: 10px 0 0 0;
   }
-  /* line 192, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+  /* line 192, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
   aside div#user_meta {
     max-width: 192px;
     text-align: right;
   }
-  /* line 197, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+  /* line 197, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
   aside div#user_meta ul li {
     display: block;
   }
 
-  /* line 204, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+  /* line 204, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
   main {
     width: 75%;
     position: absolute;
@@ -194,11 +193,11 @@ main div#ending_message {
     overflow-x: hidden;
     overflow-y: hidden;
   }
-  /* line 212, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+  /* line 212, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
   main article {
     max-width: 640px;
   }
-  /* line 216, /var/www/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
+  /* line 216, /home/ciges/Webs/elladogeekde.ciges.net/themes/svbhack_custom/static/css/style.scss */
   main header {
     border-top: 0;
   }
@@ -435,30 +434,47 @@ main article a.readmore {
 main article a.readmore:hover {
   background-color: rgba(153, 195, 233, 0.1);
 }
-/* line 233 */
+/* line 231 */
+main article h3 {
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: -0.6em;
+}
+/* line 235 */
+main article h3 + ol,
+main article h3 + ul {
+  font-size: 90%;
+  margin-bottom: 2em;
+}
+/* line 238 */
+main article h3 + ol li,
+main article h3 + ul li {
+  padding-left: 0.5em;
+}
+/* line 247 */
 main header {
   padding: 0.25rem 40px;
 }
-/* line 236 */
+/* line 250 */
 main header p {
   font-weight: normal;
   font-size: 0.9rem;
 }
-/* line 242 */
+/* line 256 */
 main div#ending_message {
   font-size: 0.8rem;
 }
 
-/* line 249 */
+/* line 263 */
 aside div#user_meta p, aside div#user_meta ul {
   font-size: 0.8rem;
 }
-/* line 253 */
+/* line 267 */
 aside div#user_meta ul li a {
   border: 1px solid #eeeeee;
   color: #eeeeee;
 }
-/* line 257 */
+/* line 271 */
 aside div#user_meta ul li a:hover {
   border-width: 2px;
   font-weight: bold;
@@ -466,11 +482,11 @@ aside div#user_meta ul li a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 268 */
+  /* line 282 */
   main article {
     text-align: left;
   }
-  /* line 272 */
+  /* line 286 */
   main article .warning span {
     padding: 5px 3.5rem 5px 4rem;
     font-size: larger;
@@ -478,7 +494,7 @@ aside div#user_meta ul li a:hover {
 }
 /* --------------------------------------------------------------- */
 /* MENSAJES */
-/* line 288 */
+/* line 302 */
 main article .info,
 main article .success,
 main article .warning,
@@ -493,31 +509,31 @@ main article .error {
   border: 2px solid;
   text-align: center;
 }
-/* line 301 */
+/* line 315 */
 main article .info {
   color: #00529B;
   border-color: #00529B;
   background-color: rgba(0, 0, 255, 0);
 }
-/* line 307 */
+/* line 321 */
 main article .success {
   color: #4F8A10;
   border-color: #4F8A10;
   background-color: rgba(0, 255, 0, 0.07);
 }
-/* line 313 */
+/* line 327 */
 main article .warning {
   color: #9F6000;
   border-color: #9F6000;
   background-color: rgba(255, 255, 0, 0.2);
 }
-/* line 319 */
+/* line 333 */
 main article .error {
   color: #ff0000;
   border-color: #ff0000;
   background-color: rgba(255, 0, 0, 0.07);
 }
-/* line 325 */
+/* line 339 */
 main article .info:before,
 main article .success:before,
 main article .warning:before,
@@ -539,25 +555,25 @@ main article .error:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 347 */
+/* line 361 */
 main article .info:before {
   content: "\f05a";
 }
-/* line 351 */
+/* line 365 */
 main article .success:before {
   content: '\f00c';
 }
-/* line 355 */
+/* line 369 */
 main article .warning:before {
   content: '\f071';
 }
-/* line 359 */
+/* line 373 */
 main article .error:before {
   content: '\f057';
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 370 */
+  /* line 384 */
   main article .info,
   main article .success,
   main article .warning,
