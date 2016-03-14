@@ -8,4 +8,4 @@ output/theme/css/*.swp
 *.swp
 cache/
 *~
-.*
+output/theme/css/.*
