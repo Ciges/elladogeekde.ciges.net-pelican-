@@ -44,7 +44,11 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 # Configuración personalizada
-STATIC_PATHS = ['images', 'docs' ]
+STATIC_PATHS = ['images', 'docs', 'extra' ]
+EXTRA_PATH_METADATA = {
+    # Move the .htaccess file to the root
+    'extra/htaccess': {'path': '.htaccess'},
+}
 ARTICLE_URL = '{category}/{slug}'
 ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
 #THEME="hyde"
@@ -76,8 +80,8 @@ LOAD_CONTENT_CACHE = True
 
 # Añadimos soporte de Feeds RSS
 FEED_DOMAIN = SITEURL
-FEED_ALL_ATOM = "feed/atom.xml"
-FEED_ALL_RSS = "feed/rss.xml"
+FEED_ALL_ATOM = "feed/atom"
+FEED_ALL_RSS = "feed/rss"
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 FEED_USE_SUMMARY = True
