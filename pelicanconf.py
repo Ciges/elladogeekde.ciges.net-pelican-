@@ -64,7 +64,7 @@ DISQUS_SITENAME = "elladogeekdeciges"
 SOCIAL = (
             ('Facebook', 'http://www.facebook.com/ciges'),
             ('Twitter', 'http://twitter.com/Ciges'),
-            ('Email', 'mailto://jmanuel@ciges.net'),
+            ('Email', 'mailto:jmanuel@ciges.net'),
             ('LinkedIn', 'http://es.linkedin.com/in/jmciges'),
         )
 
