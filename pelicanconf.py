@@ -80,8 +80,8 @@ LOAD_CONTENT_CACHE = True
 
 # Añadimos soporte de Feeds RSS
 FEED_DOMAIN = SITEURL
-FEED_ALL_ATOM = "feed/atom"
-FEED_ALL_RSS = "feed/rss"
+FEED_ALL_ATOM = "feed"
+#FEED_ALL_RSS = "feed/rss"
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 FEED_USE_SUMMARY = True
