@@ -63,6 +63,27 @@ aside {
 }
 
 main {
+    header {
+        a {
+          float: left;
+        }
+        a.feed {
+          float: right;
+          margin-right: -1em;
+          font-style: italic;
+        }
+        p {
+          margin-top: 0.5em;
+          margin-bottom: 0.5em;
+        }
+        p:after {
+            content: " ";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+        }
+    }
     article {
         max-width: 95%;
         padding: 15px 25px;
@@ -239,7 +260,7 @@ main {
                     padding-left: 0.5em;
                 }
                 margin-bottom: 2em;
-            } 
+            }
         }
 
     }
@@ -298,7 +319,7 @@ aside {
 
 main {
     article {
-    
+
         .info,
         .success,
         .warning,
@@ -326,7 +347,7 @@ main {
 
         .warning {
             color: $color_warning;
-            border-color: $color_warning; 
+            border-color: $color_warning;
             background-color: $color_warning_fondo;
         }
 
@@ -375,7 +396,7 @@ main {
         }
 
     }
-    
+
 }
 
 @media screen and (min-width: 1024px) {

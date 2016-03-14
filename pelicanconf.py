@@ -51,7 +51,7 @@ ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
 #THEME="/var/www/elladogeekde.ciges.net/themes/notmyidea_custom"
 THEME="/var/www/elladogeekde.ciges.net/themes/svbhack_custom"
 PLUGIN_PATHS = [ "/var/www/elladogeekde.ciges.net/plugins" ]
-PLUGINS = [ "optimize_images", "better_figures_and_images", "liquid_tags.img", "assets", "summary", "pelican_fontawesome" ]
+PLUGINS = [ "optimize_images", "better_figures_and_images", "liquid_tags.img", "assets", "summary", "pelican_fontawesome", "feed_summary" ]
 
 # Comentarios con Disqus
 DISQUS_SITENAME = "elladogeekdeciges"
@@ -74,3 +74,10 @@ CONEXION_INTERNET = True
 CACHE_CONTENT = True
 LOAD_CONTENT_CACHE = True
 
+# Añadimos soporte de Feeds RSS
+FEED_DOMAIN = SITEURL
+FEED_ALL_ATOM = "feed/atom.xml"
+FEED_ALL_RSS = "feed/rss.xml"
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+FEED_USE_SUMMARY = True
