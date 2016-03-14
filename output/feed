@@ -4,7 +4,36 @@
 &lt;p&gt;Saliendo ya de la nube después de un intenso fin de semana. &lt;a href="https://twitter.com/Adoankim"&gt;Adam&lt;/a&gt;, &lt;a href="https://twitter.com/daconstenla"&gt;David&lt;/a&gt;, &lt;a href="https://www.facebook.com/jorge.martinezsantiago.12"&gt;Jorge&lt;/a&gt; y &lt;a href="https://twitter.com/Ciges"&gt;José Manuel&lt;/a&gt; decidimos pasar el 28 y 29 de febrero &lt;a href="http://hacksb.vigolabs.gal/es/"&gt;jugando a hacer “puzzles”&lt;/a&gt;. Un caja de cartón, un “mini ordenador”, sensores, cables, varios lenguajes de programación y una idea, construir entre todos un dispositivo interesante y que además, funcione, una nasa “inteligente”.&lt;/p&gt;
 &lt;p&gt;Llegamos, nos sentamos y tras el primer café asistimos a un par de charlas que nos van metiendo en el tema. Carlos Groba presenta a &lt;a href="http://www.marineinstruments.es/"&gt;Marine Instruments&lt;/a&gt;, una empresa gallega con sede en Nigrán, un caso de éxito con 100 empleados que ha desplegado 25.000 boyas interconectadas por todo el mundo para asistir a los atuneros con datos que les permitan tomar decisiones para pescar de forma más eficiente. Espectacular y un gran comienzo para entender la importancia económica de las nuevas tecnologías en un sector clave para Vigo, Galicia y España como es el marítimo.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="foto_de_equipo_1" src="http://elladogeekde.ciges.net/images/hackathon_sanjurjo_badia_empezamos.jpg" style="width: 450px; height: auto;"/&gt;&lt;/p&gt;
-</summary><category term="hackathon"></category><category term="iot"></category><category term="udoo"></category><category term="raspberry"></category><category term="arduino"></category></entry><entry><title>Configuración de la tarjeta wifi y el lector de tarjetas SD en Elementary OS (Ubuntu) Linux (Intel Wireless N7260, chipset RTL 5287)</title><link href="http://elladogeekde.ciges.net/blog/configuracion-lector-sd-linux-n7260" rel="alternate"></link><updated>2016-02-23T16:28:00+01:00</updated><author><name>Ciges</name></author><id>tag:elladogeekde.ciges.net,2016-02-23:blog/configuracion-lector-sd-linux-n7260</id><summary type="html">
+
+&lt;p&gt;Una segunda charla, de carácter más técnico, impartida por Michelangelo, miembro del equipo que ha llevado adelante el &lt;a href="https://www.kickstarter.com/projects/udoo/udoo-android-linux-arduino-in-a-tiny-single-board"&gt;proyecto UDOO&lt;/a&gt;. Nos explica las particularidades de los “miniordenadores” UDOO, unas placas que serán las que utilizaremos. Estas placas integran lo mejor de distintos mundos y multitud de sensores para permitir recibir datos del “mundo real”, permitiendo a los profesionales y aficionados &lt;em&gt;“montar puzzles”&lt;/em&gt; que van desde dirigir un robot a controlar el estado de la caldera de nuestros hogares.&lt;/p&gt;
+&lt;p&gt;Al igual que un corredor al inicio de un maratón, las emociones son encontradas, el deseo de disfrutar al máximo, la curiosidad por descubrir los detalles de la ruta y el respeto ante lo que se antoja que podría no ser fácil. Y que seguro dejará más de un lesionado.&lt;/p&gt;
+&lt;p&gt;¡Arrancamos! dispuestos a terminar con los brazos en alto y orgullosos de salir de nuestra &lt;em&gt;“zona de confort”&lt;/em&gt;, profesionalmente hablando.&lt;/p&gt;
+&lt;p&gt;Ochenta profesionales reunidos en el Auditorio Mar de Vigo, repartidos en diferentes grupos.  Competimos entre nosotros pero nadie piensa en ello, concentración, a veces desesperación y un claro espíritu deportivo inunda el ambiente.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;"¡Chicos, a las cinco y media de esta tarde esto tiene que estar funcionando y tenemos que tener una presentación hecha!&lt;/em&gt;&lt;/strong&gt;". Esta era una de las frases que golpeaban nuestra cabeza con más intensidad el domingo por la mañana, junto con otras que no se podrían reproducir en horario infantil. Reparto de tareas siguiendo la metodología Kanban, motivación al 150%, comunicación intensa y continua entre nosotros y miembros de otros equipos para resolver problemas técnicos …. ¡cabalgamos, Sancho!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;“Salís en el Faro de Vigo”&lt;/em&gt;&lt;/strong&gt; nos comenta uno de los organizadores. Entre las fotos del artículo estamos nosotros. Pues sí, salimos guapos :-)&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imagen de una nasa" class="right" src="http://elladogeekde.ciges.net/images/hackathon_sanjurjo_badia_nasareal.jpg" style="width: 191px; height: auto;"/&gt;&lt;/p&gt;
+&lt;p&gt;... seguimos ...&lt;/p&gt;
+&lt;p&gt;Un fabricante local de nasas aparece por allí. Animado y muy hablador, le ha gustado lo que ha visto en el periódico y nos quiere echar una mano. Nos “regala” un par de nasas reales por si nos pueden servir de algo. Nos despedimos con un buen apretón de manos y ...&lt;/p&gt;
+&lt;p&gt;... seguimos ...&lt;/p&gt;
+&lt;p&gt;Llega el momento. Hay proyectos muy buenos y nos toca presentar el nuestro, &lt;strong&gt;&lt;em&gt;"&lt;a href="https://www.hackster.io/enxe-eiros-da-nasa/ai-nasa-3e6bfb"&gt;ai'nasa&lt;/a&gt;"&lt;/em&gt;&lt;/strong&gt;, una nasa con sensores capaz de enviar a un servicio web su posición y si hay “bicho” o no en su interior. Vaya, ¡hemos ganado gente! nos miramos entre nosotros con algo de sorpresa, estamos contentos de lo que hemos conseguido ya que  al fín y al cabo veníamos a jugar.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="foto_de_equipo_2" src="http://elladogeekde.ciges.net/images/hackathon_sanjurjo_badia_terminamos.jpg" style="width: 450px; height: auto;"/&gt;&lt;/p&gt;
+&lt;p&gt;Nuestro agradecimiento a &lt;a href="http://hacksb.vigolabs.gal/"&gt;Vigolabs&lt;/a&gt;, a las empresas patrocinadoras, al &lt;a href="http://hoxe.vigo.org/"&gt;Concello de Vigo&lt;/a&gt; por todo su apoyo, y a &lt;strong&gt;&lt;a href="https://twitter.com/jsayar"&gt;Jesús Sayar&lt;/a&gt;&lt;/strong&gt; y &lt;strong&gt;&lt;a href="https://twitter.com/eloycoto"&gt;Eloy Coto&lt;/a&gt;&lt;/strong&gt; en particular por el enooorme trabajo que ha supuesto organizar un evento como el &lt;a href="http://hacksb.vigolabs.gal/"&gt;Hackathon Sanjunrjo Badía&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Para algunos ha sido la primera vez que participamos en un hackathon, seguro que repetimos si nuestras respectivas agendas lo permiten.  &lt;/p&gt;
+&lt;p&gt;Y para muestra de lo que allí se vivió, un botón, un pequeño vídeo en &lt;em&gt;time-lapse&lt;/em&gt;&lt;/p&gt;
+&lt;iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/nUFrseWzso8?rel=0" width="560"&gt;&lt;/iframe&gt;
+&lt;p class="tituloimagen"&gt;¡colabora, construye y disfruta!&lt;/p&gt;
+&lt;p&gt;Animamos a profesionales y aficionados del sector a hacerlo. Independientemente del resultado, es una experiencia que vale la pena.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sal de tu zona de confort. Sólo se puede crecer si estás dispuesto a sentirte incómodo al intentar algo nuevo&lt;/p&gt;
+&lt;p&gt;— &lt;cite&gt;Brian Tracy&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Otros enlaces interesantes&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://jsanroman.net/2016/03/participamos-en-el-hackathon-sanjurjo-badia/"&gt;Crónica de Javier Sanromán&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.initios.com/dos-dias-desarrollo-creativo-hackathon-sanjurjo-badia/"&gt;Crónica del equipo de Initios &lt;em&gt;"Desarrollo Creativo de Aplicaciones"&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.farodevigo.es/mar/2016/02/29/proyecto-nasa-inteligente-triunfa-vigo/1413638.html"&gt;Artículo en el Faro de Vigo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.flickr.com/photos/135050343@N06/sets/72157665168833225/"&gt;Galería de fotos del Hackathón&lt;/a&gt;, por Luís González Fernández&lt;/li&gt;
+&lt;/ol&gt;</summary><category term="hackathon"></category><category term="iot"></category><category term="udoo"></category><category term="raspberry"></category><category term="arduino"></category></entry><entry><title>Configuración de la tarjeta wifi y el lector de tarjetas SD en Elementary OS (Ubuntu) Linux (Intel Wireless N7260, chipset RTL 5287)</title><link href="http://elladogeekde.ciges.net/blog/configuracion-lector-sd-linux-n7260" rel="alternate"></link><updated>2016-02-23T16:28:00+01:00</updated><author><name>Ciges</name></author><id>tag:elladogeekde.ciges.net,2016-02-23:blog/configuracion-lector-sd-linux-n7260</id><summary type="html">
 &lt;p&gt;Hace algún tiempo, en Mayo del 2014, compré un portatil a la empresa &lt;a href="ihttp://www.mountain.es/"&gt;Mountain&lt;/a&gt;, en concreto el &lt;strong&gt;Mountain Nickel 10&lt;/strong&gt;, un portátil de 14" con procesador Core i5 4310M Mobile a 2.7 GHz, equipo del que estoy muy contento. Mountain es una empresa española conocida por montar sus equipos en España y por fabricar productos de gran calidad.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Imagen de un portátil Mountain" class="right" src="http://elladogeekde.ciges.net/images/portatil_mountain.jpg" style="width: 345px; height: auto;"/&gt;&lt;/p&gt;
 &lt;p&gt;Tengo instalado un sistema operativo &lt;strong&gt;Linux&lt;/strong&gt;, en concreto una &lt;a href="https://elementary.io/es/"&gt;Elementary OS&lt;/a&gt;, distribución basada en &lt;a href="http://www.ubuntu.com/"&gt;Ubuntu&lt;/a&gt; y me encontré con que parte del hardware es demasiado &lt;em&gt;moderno&lt;/em&gt; para la versión del kernel incluída por defecto.&lt;/p&gt;
@@ -12,14 +41,62 @@
 &lt;ul&gt;
 &lt;li&gt;La tarjeta de red Wifi, una &lt;em&gt;Intel Wireless N7260&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;El lector de tarjetas SD, con chipset &lt;em&gt;Realtek 5287&lt;/em&gt;
-</summary><category term="wifi"></category><category term="drivers"></category><category term="sd"></category><category term="ubuntu"></category><category term="linux"></category><category term="elementaryos"></category><category term="mountain"></category></entry><entry><title>Desarrollo de aplicaciones escalables con Node.js, una breve presentación</title><link href="http://elladogeekde.ciges.net/blog/nodejs-una-breve-presentacion" rel="alternate"></link><updated>2016-02-05T00:00:00+01:00</updated><author><name>Ciges</name></author><id>tag:elladogeekde.ciges.net,2016-02-05:blog/nodejs-una-breve-presentacion</id><summary type="html">
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Los pasos para solucionarlo han sido:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Actualizar el &lt;em&gt;kernel de Linux&lt;/em&gt; desde este &lt;a href="http://kernel.ubuntu.com/~kernel-ppa/"&gt;PPA de Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Actualizar el &lt;em&gt;firmware&lt;/em&gt; utilizado por los drivers de la tarjeta wifi&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Actualización al kernel a la versión 3.19.8&lt;/h2&gt;
+&lt;p&gt;Para actualizarlo cogí la &lt;strong&gt;última version disponible de la serie 3 del kernel, la &lt;em&gt;3.19.8&lt;/em&gt;, descargando los tres paquetes .deb, dos para las cabeceras y uno para el kernel, directamente desde &lt;a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19.8-vivid/"&gt;la web del PPA del kernel de Ubuntu&lt;/a&gt;&lt;/strong&gt; e instalándolos manualmente con &lt;em&gt;dpkg&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;dpkg -i linux-headers-3.19.8-031908_3.19.8-031908.201505110938_all.deb
+dpkg -i linux-headers-3.19.8-031908-generic_3.19.8-031908.2015s5110938_amd64.deb
+dpkg -i linux-image-3.19.8-031908-lowlatency_3.19.8-031908.201505110938_amd64.deb
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Actualización del firmware para los drivers de la tarjeta WiFi&lt;/h2&gt;
+&lt;p&gt;Una vez actualizado el kernel a esta versión el lector de tarjetas SD funciona correctamente. El problema es que ¡no tenemos red!&lt;/p&gt;
+&lt;p&gt;Al arrancar podemos ver el siguiente mensaje de error en el log del sistema &lt;em&gt;/var/log/syslog&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;iwlwifi 0000:02:00.0: Direct firmware load for iwlwifi-7260-12.ucode failed with error -2
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Lo que está pasando es que los ficheros de firmware instalados (paquete &lt;em&gt;linux-firmware&lt;/em&gt;) son antiguos, ya que nos está pidiendo el archivo &lt;em&gt;iwlwifi-7260-12.ucode&lt;/em&gt; &lt;em&gt;(versión 12)&lt;/em&gt; y el que tenemos en el sistema instalado en &lt;em&gt;/lib/firmware&lt;/em&gt; es una versión anterior.&lt;/p&gt;
+&lt;p&gt;Una rápida búsqueda nos lleva a que se encuentra en &lt;a href="http://packages.ubuntu.com/en/vivid/linux-firmware"&gt;este repositorio de actualizaciones de seguridad de Ubuntu&lt;/a&gt;.  Siguiendo la recomendación de su web, he &lt;strong&gt;añadido el repositorio de actualizaciones de seguridad&lt;/strong&gt; a la lista de fuentes del sistema creando un archivo debajo de &lt;em&gt;/etc/apt/sources.list.d&lt;/em&gt; con el siguiente contenido:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://security.ubuntu.com/ubuntu&lt;/span&gt; &lt;span class="kp"&gt;vivid-security&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Para posteriormente instalarlo de la manera habitual:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;apt-get update
+apt-get install linux-firmware
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resuelto :-)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Be Free! Be Wild! Be Linux!&lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term="wifi"></category><category term="drivers"></category><category term="sd"></category><category term="ubuntu"></category><category term="linux"></category><category term="elementaryos"></category><category term="mountain"></category></entry><entry><title>Desarrollo de aplicaciones escalables con Node.js, una breve presentación</title><link href="http://elladogeekde.ciges.net/blog/nodejs-una-breve-presentacion" rel="alternate"></link><updated>2016-02-05T00:00:00+01:00</updated><author><name>Ciges</name></author><id>tag:elladogeekde.ciges.net,2016-02-05:blog/nodejs-una-breve-presentacion</id><summary type="html">
 &lt;p&gt;Node.js es un entorno de desarrollo en Javascript, y en el que resulta sencillo programar &lt;strong&gt;servicios web&lt;/strong&gt;, con un gran rendimiento si lo comparamos con otras tecnologías.  Es &lt;strong&gt;multiplataforma&lt;/strong&gt; y resulta muy práctico para desarrollar servicios en &lt;strong&gt;dispositivos&lt;/strong&gt; (la famosa &lt;em&gt;"Internet of Things"&lt;/em&gt;), además de ser una herramienta cojonuda para desarrolladores web, ya que dispone de frameworks y librerías que facilitan el desarrollo rápido de aplicaciones en un lenguaje conocido.&lt;/p&gt;
 &lt;p&gt;Hace unos meses mi empresa me pagó un curso de &lt;a href="https://nodejs.org/en/"&gt;Node.js&lt;/a&gt; de 20 horas impartido por &lt;a href="http://www.albertobasalo.com/"&gt;Alberto Basalo&lt;/a&gt;. Me había comprometido a realizar una presentación de lo dado en el curso para poder transmitir, en la medida de mis posibilidades, un resumen de lo explicado por Alberto a mis compañeros.  &lt;/p&gt;
 &lt;p&gt;Aprovechando que he tenido algo de tiempo por fin cumplí con mi palabra. Y &lt;a href="/docs/presentacion_nodejs"&gt;aquí&lt;/a&gt; dejo disponible la presentación:&lt;/p&gt;
 &lt;p&gt;&lt;a href="/docs/presentacion_nodejs"&gt;&lt;img alt="presentación" src="http://elladogeekde.ciges.net/images/aplicaciones_escalables_con_nodejs.png" style="width: 450px; height: auto;"/&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="presentaciones"></category><category term="nodejs"></category></entry><entry><title>¡Queda inaugurada esta web!</title><link href="http://elladogeekde.ciges.net/blog/queda-inaugurada-esta-web" rel="alternate"></link><updated>2016-01-22T10:53:00+01:00</updated><author><name>Ciges</name></author><id>tag:elladogeekde.ciges.net,2016-01-22:blog/queda-inaugurada-esta-web</id><summary type="html">
+
+&lt;p&gt;&lt;strong&gt;Alberto Basalo&lt;/strong&gt;, uno de los fundadores de &lt;a href="http://agorabinaria.com/"&gt;Ágora Binaria&lt;/a&gt;, es un desarrollador y formador &lt;em&gt;de altísimo nivel&lt;/em&gt; y nos dió un repaso muy completo al entorno (ejem, demasiado en mi opinión, lo que explicó da bien para un curso de 60 horas).&lt;/p&gt;
+&lt;p&gt;Es una introducción en la que se describe:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Qué es Node.js y por qué usarlo&lt;/li&gt;
+&lt;li&gt;Instalación del producto y librerías&lt;/li&gt;
+&lt;li&gt;La filosofía de desarrrollo&lt;/li&gt;
+&lt;li&gt;Cómo hacer servicios web con el framework &lt;a href="https://www.npmjs.com/package/express"&gt;Express&lt;/a&gt;, usando un motor de plantillas y accediendo a una base de datos&lt;/li&gt;
+&lt;li&gt;Qué herramienta usar para desplegar un proyecto con todos sus componentes (preprocesado de CSS, compresión de Javascript, optimización de imágenes, descarga de componentes JQuery ...)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Cordialemón&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;No creas lo que un hombre dice, observa lo que hace&lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term="presentaciones"></category><category term="nodejs"></category></entry><entry><title>¡Queda inaugurada esta web!</title><link href="http://elladogeekde.ciges.net/blog/queda-inaugurada-esta-web" rel="alternate"></link><updated>2016-01-22T10:53:00+01:00</updated><author><name>Ciges</name></author><id>tag:elladogeekde.ciges.net,2016-01-22:blog/queda-inaugurada-esta-web</id><summary type="html">
 &lt;p&gt;¡Hola y bienvenido a este rinconcillo de la Internesss!&lt;/p&gt;
 &lt;p&gt;Con este humilde web, que sucede a la &lt;a href="http://www.ciges.net"&gt;anterior&lt;/a&gt;, pretendo, de vez en cuando, compartir ideas y resultados de mi trabajo con la comunidad.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="El conocimiento no sirve de nada si no se comparte" src="http://elladogeekde.ciges.net/images/compartir_rossmarisin.jpg" style="width: 350px; height: auto;"/&gt;&lt;/p&gt;
 &lt;p class="tituloimagen"&gt;Ilustración de la genial diseñadora mejicana &lt;a href="http://ross.mx/"&gt;Rosina Marisin&lt;/a&gt;&lt;/p&gt;
-</summary><category term="elladogeek"></category></entry></feed>
+
+&lt;p&gt;Se suelen dirigir a mi por mi apellido, Ciges (estiloso y elegante sin par) y, entre otras cosas, como padre y vigués de corazón (de la noble y leal ciudad española de &lt;a href="https://es.wikipedia.org/wiki/Vigo"&gt;Vigo&lt;/a&gt;) soy un apasionado de la informática (desde los tiempos del 8086 que uno ya tiene una edad).&lt;/p&gt;
+&lt;p&gt;Descubrí Linux en la Universidad (hace ya casi 20 años, cuando se pedían los CDs por correo). Posteriormente, cuando Internet pasó a formar parte de mi vida, me convertí en un seguidor de la filosofía de trabajo en equipo, colaboración y mejora continua aportadas por el &lt;strong&gt;Software Libre&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Y desde aquí aportaré mi granito de arena cuando considere que tengo algo que decir :-)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A cabeça non para ...&lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term="elladogeek"></category></entry></feed>

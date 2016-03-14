@@ -77,11 +77,11 @@
       <a href="{{ SITEURL }}">Inicio</a> <a href="{{ SITEURL }}/archives">Archivo</a>
       {% if FEED_ALL_ATOM and FEED_ALL_RSS %}
           {# if both types of RSS are defined then only Atom is shown as a link #}
-          <a class="feed" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Entradas (Atom)</a>
+          <a class="feed movilno" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Entradas (Atom)</a>
       {% elif  FEED_ALL_ATOM %}
-          <a class="feed" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Entradas (Atom)</a>
+          <a class="feed movilno" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Entradas (Atom)</a>
       {% elif FEED_ALL_RSS %}
-          <a class="feed" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">Entradas (RSS)</a>
+          <a class="feed movilno" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">Entradas (RSS)</a>
       {% endif %}
       {% block header %}
       {% endblock header %}
