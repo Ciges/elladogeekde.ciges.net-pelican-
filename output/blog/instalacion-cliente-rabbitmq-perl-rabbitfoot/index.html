@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Fuentes de Google, cogidas las mismas que las del tema "vanz" -->
+  <link href="http://fonts.googleapis.com/" rel="dns-prefetch">
+  <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700|Merriweather:300,400&amp;subset=latin,latin-ext" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="../../theme/css/pygments.css">
+  <!-- Modificación de estilos con respecto al svbhack original -->
+  <link rel="stylesheet" href="../../theme/css/custom.css?c967c504">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <!-- Conjunto de iconos Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="../../theme/css/font-awesome-4.5.0/css/font-awesome.min.css">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="José Manuel Ciges Regueiro">
+<meta name="description" content="Reflexiones de un informático de sistemas de la generación del 76, enamorado del software libre, vigués, padre y algo bohemio y soñador entre otras cosas">
+  <link href="http://elladogeekde.ciges.net/feed" type="application/atom+xml" rel="alternate" title="¡Comparte, insensato! Atom" />
+
+<meta name="keywords" content="perl, rabbitmq, linux, rabbitfoot">
+
+  <title>¡Comparte, insensato! (el lado geek de Ciges) &ndash; Instalación del cliente RabbitFoot de Perl en un servidor Linux</title>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74045349-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="../..">
+        <img src="/theme/images/ciges.png" alt="avatar">
+      </a>
+      <h2 id="title"><a href="../..">¡Comparte, insensato!</a></h2>
+<h3 id="subtitle">el lado geek de Ciges</h3><p id="description" class="movilno">Reflexiones de un informático de sistemas de la generación del 76, enamorado del software libre, vigués, padre y algo bohemio y soñador entre otras cosas</p>      <p></p>
+      <ul class="movilno">
+        <li><a href="http://www.facebook.com/ciges" target="_blank">Facebook</a></li>
+        <li><a href="http://twitter.com/Ciges" target="_blank">Twitter</a></li>
+        <li><a href="mailto:jmanuel@ciges.net" target="_blank">Email</a></li>
+        <li><a href="http://es.linkedin.com/in/jmciges" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <p>
+      <a href="../..">Inicio</a> <a href="../../archives">Archivo</a>
+          <a class="feed movilno" href="http://elladogeekde.ciges.net/feed">Entradas (Atom)</a>
+      </p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h1><a href="../../blog/instalacion-cliente-rabbitmq-perl-rabbitfoot">Instalación del cliente RabbitFoot de Perl en un servidor Linux</a></h1>
+  </div>
+<div class="article_meta">
+  <p>Publicado el: jue 07 abril 2016 -
+Etiquetas:
+    <a href="../../tag/perl.html">perl</a>,    <a href="../../tag/rabbitmq.html">rabbitmq</a>,    <a href="../../tag/linux.html">linux</a>,    <a href="../../tag/rabbitfoot.html">rabbitfoot</a>  </p>
+</div>  <div class="article_text">
+
+    
+<p>En este artículo explicaré cómo he instalado el cliente de RabbitMQ para Perl <a href="http://search.cpan.org/~ikuta/Net-RabbitFoot-1.03/lib/Net/RabbitFoot.pm">Net::RabbitFoot</a>.</p>
+<p><img alt="Logotipo de RabbitMQ" class="right" src="../../images/rabbitmq_logo_strap.png" style="width: 350px; height: auto;"/></p>
+<p><a href="http://www.rabbitmq.com/">RabbitMQ</a> es un servidor con licencia Open Source que permite la comunicación entre diferentes aplicaciones o servicios de forma distribuída mediante mensajes. La idea general de los servicios de mensajería es gestionar una o varias colas a las que van llegando las distintas "órdenes" o mensajes. Hay aplicaciones que se encargan de enviar mensajes, entendidos como conjuntos de datos al servicio, y otras aplicaciones (o procesos) van recibiendo los mensajes y actuando en consecuencia. <a href="https://www.cloudamqp.com/blog/2015-05-18-part1-rabbitmq-for-beginners-what-is-rabbitmq.html">Aquí</a> hay una excelente explicación de cómo funcionan este tipo de sistemas.</p>
+<p>Un ejemplo típico podría ser un grupo de chat. Una aplicación (web o un cliente móvil en el caso de WhatsApp, por ejemplo) envía los mensajes del usuario y el resto de usuarios del grupo con sus respectivos dispositivos permanecen "escuchando" para procesar los mensajes que vayan llegando. Cada grupo sería una cola distinta.
+</p>
+<p>Usaremos <a href="http://www.cpan.org/">CPAN</a> para instalar Net::RabbitFoot con todas sus dependencias de forma automática con los siguientes requisitos:
+- Las librerías serán instaladas en un directorio personalizado, para no tocar el Perl del sistema
+- En mi caso particular la instalación se ha hecho sobre un sistema SUSE Linux Enterprise 11</p>
+<h2>Instalación de las librerías de desarrollo</h2>
+<p>Si no tenemos instalado el compilador gcc y los útiles de compilación deberemos hacerlo. En SuSE Linux con el comando <em><strong>zypper</strong></em> lo podemos hacer indicando que queremos instalar todos los paquetes del "patrón" <em>"Basis-Devel"</em>:</p>
+<div class="highlight"><pre>$ zypper install --type pattern Basis-Devel
+</pre></div>
+<h2>Configuración de CPAN para la instalación de módulos en nuetra carpeta de usuario</h2>
+<p>Para poder descargar de forma automatizada paquetes de Perl usaré <strong><em>cpanminus</em></strong>, una herramienta superior a <em>cpan</em>, la incluída por defecto con Perl.</p>
+<p>Para poder usar <strong>un proxy HTTP con autentificación</strong> estableceremos variables de entorno de la shell <em>http_proxy</em>, <em>ftp_proxy</em> y <em>https_proxy</em></p>
+<div class="highlight"><pre>$ <span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span><span class="s2">"http://miusuario:miclave@direcciondemiproxyhttp:puertodelproxyhttp"</span>
+$ <span class="nb">export</span> <span class="nv">ftp_proxy</span><span class="o">=</span><span class="s2">"</span>$<span class="s2">http_proxy"</span>
+$ <span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span><span class="s2">"</span>$<span class="s2">http_proxy"</span>
+</pre></div>
+<p>Configuramos <a href="http://www.cpan.org/">CPAN</a>, en mi caso para utilizar <strong>un proxy HTTP con autentificación</strong> con el comando <code>perl -MCPAN -e shell</code>:</p>
+<div class="highlight"><pre>$ perl -MCPAN -e shell
+Would you like to configure as much as possible automatically? <span class="o">[</span>yes<span class="o">]</span> no
+Do you want to halt on failure <span class="o">(</span>yes/no<span class="o">)</span>? <span class="o">[</span>no<span class="o">]</span> yes
+Your terminal expects ISO-8859-1 <span class="o">(</span>yes/no<span class="o">)</span>? <span class="o">[</span>yes<span class="o">]</span> no
+Would you like me to automatically choose some CPAN mirror sites <span class="k">for</span> you? <span class="o">(</span>This means connecting to the Internet<span class="o">)</span> <span class="o">[</span>yes<span class="o">]</span> no
+</pre></div>
+<p>Este comando lo que hace es una serie de preguntas. Indico únicamente aquellas cuya respuesta es distinta a la ofrecida por defecto y que no son evidentes.</p>
+<p>Hubo que indicarle que no intente obtener la lista de servidores de forma automática de Internet debido a que con la versión 5.16.3 de perl se producía el error <a href="http://stackoverflow.com/questions/9614347/error-running-cpan-the-first-time">"Can't call method "http" on unblessed reference at ... FirstTime.pm"</a>.</p>
+<h2>Configuración del entorno de la shell</h2>
+<p>Una vez terminada la ronda de preguntas el script de configuración descargará algunos módulos de Internet y <strong>añadirá automáticamente las siguientes varias variables de entorno a la configuración de la shell</strong>, en el fichero <em>.bashrc</em></p>
+<div class="highlight"><pre><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span>$<span class="s2">HOME/perl5/bin</span><span class="si">${</span><span class="nv">PATH</span><span class="p">+:</span><span class="si">}${</span><span class="nv">PATH</span><span class="si">}</span><span class="s2">"</span><span class="p">;</span> <span class="nb">export</span> PATH<span class="p">;</span>
+<span class="nv">PERL5LIB</span><span class="o">=</span><span class="s2">"</span>$<span class="s2">HOME/perl5/lib/perl5</span><span class="si">${</span><span class="nv">PERL5LIB</span><span class="p">+:</span><span class="si">}${</span><span class="nv">PERL5LIB</span><span class="si">}</span><span class="s2">"</span><span class="p">;</span> <span class="nb">export</span> PERL5LIB<span class="p">;</span>
+<span class="nv">PERL_LOCAL_LIB_ROOT</span><span class="o">=</span><span class="s2">"</span>$<span class="s2">HOME/perl5</span><span class="si">${</span><span class="nv">PERL_LOCAL_LIB_ROOT</span><span class="p">+:</span><span class="si">}${</span><span class="nv">PERL_LOCAL_LIB_ROOT</span><span class="si">}</span><span class="s2">"</span><span class="p">;</span> <span class="nb">export</span> PERL_LOCAL_LIB_ROOT<span class="p">;</span>
+<span class="nv">PERL_MB_OPT</span><span class="o">=</span><span class="s2">"--install_base \"</span>$<span class="s2">HOME/perl5\""</span><span class="p">;</span> <span class="nb">export</span> PERL_MB_OPT<span class="p">;</span>
+<span class="nv">PERL_MM_OPT</span><span class="o">=</span><span class="s2">"INSTALL_BASE=</span>$<span class="s2">HOME/perl5"</span><span class="p">;</span> <span class="nb">export</span> PERL_MM_OPT<span class="p">;</span>
+</pre></div>
+<p>Cerramos la sesión, volvemos a hacer login en el servidor y tendremos todo listo para instalar nuevos módulos debajo de la carpeta <em>"perl5"</em> en nuestra carpeta de usuario.</p>
+<h2>Instalación de RabbitFoot</h2>
+<p>Una vez CPAN correctamente configurado instalamos cpanminus y luego usamos esta herramienta para instalar el módulo y sus dependencias</p>
+<div class="highlight"><pre>$ cpan App::cpanminus
+$ cpanm Net::RabbitFoot
+</pre></div>
+<p>Durante la instalación dió un error a la hora de instalar <em>MooseX::App::Cmd</em> con lo que volvimos a reinstalar esta dependencia y solicitar de nuevo las instalación de <em>RabbitFoot</em>, esta vez con éxito.</p>
+<div class="highlight"><pre>$ cpanm MooseX::App::Cmd
+$ cpanm Net::RabbitFoot
+</pre></div>
+<p>La documentación incluída en el módulo es casi inexistente, pero <strong>hay unos bonitos tutoriales en el propio producto RabbitMQ que podemos consultar <a href="https://github.com/rabbitmq/rabbitmq-tutorials/tree/master/perl">aquí</a></strong>.</p>
+<h2>Envío de nuestro primer mensaje "¡Hola Mundo!"</h2>
+<p>Para poder enviar un mensaje al servidor RabbitMQ tendremos que conocer los siguientes datos:</p>
+<ul>
+<li>Dirección y puerto (5672 por defecto) del servidor RabbitMQ</li>
+<li>Host virtual en el que está configurada la cola</li>
+<li>Usuario y clave para poder enviar mensajes al servidor</li>
+<li>Nombre del <em>"exchange"</em>, el canal de entrada definido en RabbitMQ</li>
+</ul>
+<p>¡Y allá vamos!</p>
+<div class="highlight"><pre><span class="ch">#!/usr/bin/perl</span>
+
+<span class="k">use</span> <span class="n">strict</span><span class="p">;</span>
+<span class="k">use</span> <span class="n">warnings</span><span class="p">;</span>
+
+<span class="vg">$|</span><span class="o">++</span><span class="p">;</span>
+<span class="k">use</span> <span class="nn">Net::</span><span class="n">RabbitFoot</span><span class="p">;</span>
+
+<span class="k">my</span> <span class="nv">$conn</span> <span class="o">=</span> <span class="nn">Net::</span><span class="n">RabbitFoot</span><span class="o">-&gt;</span><span class="k">new</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">load_xml_spec</span><span class="p">()</span><span class="o">-&gt;</span><span class="nb">connect</span><span class="p">(</span>
+    <span class="n">host</span> <span class="o">=&gt;</span> <span class="s">'elservidordondestainstaladorabbitmq.com'</span><span class="p">,</span>
+    <span class="n">port</span> <span class="o">=&gt;</span> <span class="mi">5672</span><span class="p">,</span>
+    <span class="n">user</span> <span class="o">=&gt;</span> <span class="s">'usuarioderabbitmq'</span><span class="p">,</span>
+    <span class="n">pass</span> <span class="o">=&gt;</span> <span class="s">'clavederabbitmq'</span><span class="p">,</span>
+    <span class="n">vhost</span> <span class="o">=&gt;</span> <span class="s">'reflex'</span><span class="p">,</span>
+<span class="p">);</span>
+
+
+<span class="k">my</span> <span class="nv">$chan</span> <span class="o">=</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="n">open_channel</span><span class="p">();</span>
+
+<span class="nv">$chan</span><span class="o">-&gt;</span><span class="n">publish</span><span class="p">(</span>
+    <span class="n">exchange</span> <span class="o">=&gt;</span> <span class="s">'nombreexchange'</span><span class="p">,</span>
+    <span class="n">routing_key</span> <span class="o">=&gt;</span> <span class="s">''</span><span class="p">,</span>
+    <span class="n">body</span> <span class="o">=&gt;</span> <span class="s">'¡Hola mundo!'</span><span class="p">,</span>
+<span class="p">);</span>
+
+<span class="k">print</span> <span class="s">" [x] Mensaje '¡Hola mundo!' enviado\n"</span><span class="p">;</span>
+
+<span class="nv">$conn</span><span class="o">-&gt;</span><span class="nb">close</span><span class="p">();</span>
+</pre></div>
+  </div>
+
+<script type="text/javascript">
+var addthis_share = {
+     // ... other options
+     url_transforms : {
+          shorten: {
+               twitter: 'bitly'
+          }
+     },
+     shorteners : {
+          bitly: { }
+     },
+     passthrough : {
+		     twitter: {
+              text: "Instalación del cliente RabbitFoot de Perl en un servidor Linux",
+			        via: "Ciges"
+		          }
+     }
+}
+var addthis_config = {
+       data_track_clickback: false
+}
+</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56cd85cc46f9822b"></script>
+<div class="addthis_native_toolbox"></div>
+  <div id="article_comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = "blog/instalacion-cliente-rabbitmq-perl-rabbitfoot";
+        (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = 'http://elladogeekdeciges.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+    </script>
+  </div>
+
+</article>
+
+
+    <div id="ending_message">
+      <div class="movilno">
+          <img src="/images/cms/logoCC.png" />
+          <p>Los artículos escritos en esta web son de uso libre bajo los términos de la licencia <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Reconocimiento-CompartirIgual 3.0</a>.</p>
+          <p>Se prohibe la copia, modificación o distribución de las fotografías en las que aparezcan personas (sólo se permite su mera visualización y se reservan todos los demás derechos de imagen).</p>
+      </div>
+      <p>Copyright © José Manuel Ciges Regueiro <em>(jmanuel en ciges punto net)</em> - Publicado con <a href="http://getpelican.com" target="_blank">Pelican</a> <span class="movilno">- Tema basado en <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">svbhack</a>, de Giulio Fidente</p></span>
+    </div>
+  </main>
+</body>
+</html>

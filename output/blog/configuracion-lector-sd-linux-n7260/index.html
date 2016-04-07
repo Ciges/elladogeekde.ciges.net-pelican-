@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" type="text/css" href="../../theme/css/pygments.css">
   <!-- Modificación de estilos con respecto al svbhack original -->
-  <link rel="stylesheet" href="../../theme/css/custom.css?7f5c1507">
+  <link rel="stylesheet" href="../../theme/css/custom.css?c967c504">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
   <!-- Conjunto de iconos Font Awesome -->
@@ -88,22 +88,22 @@ Etiquetas:
 </ol>
 <h2>Actualización al kernel a la versión 3.19.8</h2>
 <p>Para actualizarlo cogí la <strong>última version disponible de la serie 3 del kernel, la <em>3.19.8</em>, descargando los tres paquetes .deb, dos para las cabeceras y uno para el kernel, directamente desde <a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19.8-vivid/">la web del PPA del kernel de Ubuntu</a></strong> e instalándolos manualmente con <em>dpkg</em></p>
-<div class="highlight"><pre><span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="o">-</span><span class="mf">3.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mf">908_3.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mf">908.201505110938_</span><span class="n">all</span><span class="o">.</span><span class="n">deb</span>
-<span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="o">-</span><span class="mf">3.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mi">908</span><span class="o">-</span><span class="n">generic_3</span><span class="mf">.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mf">908.2015</span><span class="n">s5110938_amd64</span><span class="o">.</span><span class="n">deb</span>
-<span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">linux</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="mf">3.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mi">908</span><span class="o">-</span><span class="n">lowlatency_3</span><span class="mf">.19.8</span><span class="o">-</span><span class="mo">031</span><span class="mf">908.201505110938_</span><span class="n">amd64</span><span class="o">.</span><span class="n">deb</span>
+<div class="highlight"><pre>dpkg -i linux-headers-3.19.8-031908_3.19.8-031908.201505110938_all.deb
+dpkg -i linux-headers-3.19.8-031908-generic_3.19.8-031908.2015s5110938_amd64.deb
+dpkg -i linux-image-3.19.8-031908-lowlatency_3.19.8-031908.201505110938_amd64.deb
 </pre></div>
 <h2>Actualización del firmware para los drivers de la tarjeta WiFi</h2>
 <p>Una vez actualizado el kernel a esta versión el lector de tarjetas SD funciona correctamente. El problema es que ¡no tenemos red!</p>
 <p>Al arrancar podemos ver el siguiente mensaje de error en el log del sistema <em>/var/log/syslog</em></p>
-<div class="highlight"><pre><span class="n">iwlwifi</span> <span class="mo">0000</span><span class="p">:</span><span class="mo">02</span><span class="p">:</span><span class="mo">00</span><span class="mf">.0</span><span class="p">:</span> <span class="n">Direct</span> <span class="n">firmware</span> <span class="n">load</span> <span class="k">for</span> <span class="n">iwlwifi</span><span class="o">-</span><span class="mi">7260</span><span class="o">-</span><span class="mi">12</span><span class="o">.</span><span class="n">ucode</span> <span class="n">failed</span> <span class="n">with</span> <span class="n">error</span> <span class="o">-</span><span class="mi">2</span>
+<div class="highlight"><pre>iwlwifi 0000:02:00.0: Direct firmware load for iwlwifi-7260-12.ucode failed with error -2
 </pre></div>
 <p>Lo que está pasando es que los ficheros de firmware instalados (paquete <em>linux-firmware</em>) son antiguos, ya que nos está pidiendo el archivo <em>iwlwifi-7260-12.ucode</em> <em>(versión 12)</em> y el que tenemos en el sistema instalado en <em>/lib/firmware</em> es una versión anterior.</p>
 <p>Una rápida búsqueda nos lleva a que se encuentra en <a href="http://packages.ubuntu.com/en/vivid/linux-firmware">este repositorio de actualizaciones de seguridad de Ubuntu</a>.  Siguiendo la recomendación de su web, he <strong>añadido el repositorio de actualizaciones de seguridad</strong> a la lista de fuentes del sistema creando un archivo debajo de <em>/etc/apt/sources.list.d</em> con el siguiente contenido:</p>
 <div class="highlight"><pre><span class="k">deb</span> <span class="s">http://security.ubuntu.com/ubuntu</span> <span class="kp">vivid-security</span> <span class="kp">main</span>
 </pre></div>
 <p>Para posteriormente instalarlo de la manera habitual:</p>
-<div class="highlight"><pre><span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
-<span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">linux</span><span class="o">-</span><span class="n">firmware</span>
+<div class="highlight"><pre>apt-get update
+apt-get install linux-firmware
 </pre></div>
 <p>Resuelto :-)</p>
 <blockquote>
