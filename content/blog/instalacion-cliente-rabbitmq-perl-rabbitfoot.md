@@ -14,6 +14,7 @@ Un ejemplo típico podría ser un grupo de chat. Una aplicación (web o un clien
 <!-- PELICAN_END_SUMMARY -->
 
 Usaremos [CPAN](http://www.cpan.org/) para instalar Net::RabbitFoot con todas sus dependencias de forma automática con los siguientes requisitos:
+
 - Las librerías serán instaladas en un directorio personalizado, para no tocar el Perl del sistema
 - En mi caso particular la instalación se ha hecho sobre un sistema SUSE Linux Enterprise 11
 

@@ -77,9 +77,11 @@ Etiquetas:
 <p><a href="http://www.rabbitmq.com/">RabbitMQ</a> es un servidor con licencia Open Source que permite la comunicación entre diferentes aplicaciones o servicios de forma distribuída mediante mensajes. La idea general de los servicios de mensajería es gestionar una o varias colas a las que van llegando las distintas "órdenes" o mensajes. Hay aplicaciones que se encargan de enviar mensajes, entendidos como conjuntos de datos al servicio, y otras aplicaciones (o procesos) van recibiendo los mensajes y actuando en consecuencia. <a href="https://www.cloudamqp.com/blog/2015-05-18-part1-rabbitmq-for-beginners-what-is-rabbitmq.html">Aquí</a> hay una excelente explicación de cómo funcionan este tipo de sistemas.</p>
 <p>Un ejemplo típico podría ser un grupo de chat. Una aplicación (web o un cliente móvil en el caso de WhatsApp, por ejemplo) envía los mensajes del usuario y el resto de usuarios del grupo con sus respectivos dispositivos permanecen "escuchando" para procesar los mensajes que vayan llegando. Cada grupo sería una cola distinta.
 </p>
-<p>Usaremos <a href="http://www.cpan.org/">CPAN</a> para instalar Net::RabbitFoot con todas sus dependencias de forma automática con los siguientes requisitos:
-- Las librerías serán instaladas en un directorio personalizado, para no tocar el Perl del sistema
-- En mi caso particular la instalación se ha hecho sobre un sistema SUSE Linux Enterprise 11</p>
+<p>Usaremos <a href="http://www.cpan.org/">CPAN</a> para instalar Net::RabbitFoot con todas sus dependencias de forma automática con los siguientes requisitos:</p>
+<ul>
+<li>Las librerías serán instaladas en un directorio personalizado, para no tocar el Perl del sistema</li>
+<li>En mi caso particular la instalación se ha hecho sobre un sistema SUSE Linux Enterprise 11</li>
+</ul>
 <h2>Instalación de las librerías de desarrollo</h2>
 <p>Si no tenemos instalado el compilador gcc y los útiles de compilación deberemos hacerlo. En SuSE Linux con el comando <em><strong>zypper</strong></em> lo podemos hacer indicando que queremos instalar todos los paquetes del "patrón" <em>"Basis-Devel"</em>:</p>
 <div class="highlight"><pre>$ zypper install --type pattern Basis-Devel

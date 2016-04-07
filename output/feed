@@ -5,9 +5,11 @@
 &lt;p&gt;&lt;a href="http://www.rabbitmq.com/"&gt;RabbitMQ&lt;/a&gt; es un servidor con licencia Open Source que permite la comunicación entre diferentes aplicaciones o servicios de forma distribuída mediante mensajes. La idea general de los servicios de mensajería es gestionar una o varias colas a las que van llegando las distintas "órdenes" o mensajes. Hay aplicaciones que se encargan de enviar mensajes, entendidos como conjuntos de datos al servicio, y otras aplicaciones (o procesos) van recibiendo los mensajes y actuando en consecuencia. &lt;a href="https://www.cloudamqp.com/blog/2015-05-18-part1-rabbitmq-for-beginners-what-is-rabbitmq.html"&gt;Aquí&lt;/a&gt; hay una excelente explicación de cómo funcionan este tipo de sistemas.&lt;/p&gt;
 &lt;p&gt;Un ejemplo típico podría ser un grupo de chat. Una aplicación (web o un cliente móvil en el caso de WhatsApp, por ejemplo) envía los mensajes del usuario y el resto de usuarios del grupo con sus respectivos dispositivos permanecen "escuchando" para procesar los mensajes que vayan llegando. Cada grupo sería una cola distinta.
 &lt;/p&gt;
-&lt;p&gt;Usaremos &lt;a href="http://www.cpan.org/"&gt;CPAN&lt;/a&gt; para instalar Net::RabbitFoot con todas sus dependencias de forma automática con los siguientes requisitos:
-- Las librerías serán instaladas en un directorio personalizado, para no tocar el Perl del sistema
-- En mi caso particular la instalación se ha hecho sobre un sistema SUSE Linux Enterprise 11&lt;/p&gt;
+&lt;p&gt;Usaremos &lt;a href="http://www.cpan.org/"&gt;CPAN&lt;/a&gt; para instalar Net::RabbitFoot con todas sus dependencias de forma automática con los siguientes requisitos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Las librerías serán instaladas en un directorio personalizado, para no tocar el Perl del sistema&lt;/li&gt;
+&lt;li&gt;En mi caso particular la instalación se ha hecho sobre un sistema SUSE Linux Enterprise 11&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;Instalación de las librerías de desarrollo&lt;/h2&gt;
 &lt;p&gt;Si no tenemos instalado el compilador gcc y los útiles de compilación deberemos hacerlo. En SuSE Linux con el comando &lt;em&gt;&lt;strong&gt;zypper&lt;/strong&gt;&lt;/em&gt; lo podemos hacer indicando que queremos instalar todos los paquetes del "patrón" &lt;em&gt;"Basis-Devel"&lt;/em&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;$ zypper install --type pattern Basis-Devel
