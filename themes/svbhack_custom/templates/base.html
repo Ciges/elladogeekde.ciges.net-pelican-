@@ -35,7 +35,7 @@
   {% block head %}
   {% endblock %}
 
-  <title>{{ SITENAME }} {% if SITESUBTITLE %}({{ SITESUBTITLE }}){% endif %} {% block title %}{% endblock %}</title>
+  <title>{% block title %}{% endblock %} {{ SITENAME }}</title>
 
   {% include "modules/analytics.html" %}
 </head>
